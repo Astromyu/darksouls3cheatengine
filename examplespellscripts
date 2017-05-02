@@ -1,0 +1,387 @@
+Will keep this page updated with new additions/scripts
+Any question/suggestion/request pm me on discord @Naragatto
+ 
+[CHANGELOG]
+v1.0 -Added Scripts, Project Heal, Lightning Arrow,Twisted Wall of Light, Spook, Sacred Oath, Izalith Staff
+v1.1 -Updated Izalith Staff (Added unlimited Weapon Art Duration and Executioner's Greatsword effect[both are onequip effect]
+v1.2 -Added Irythyll Straight Sword (2.5k AR) + White Birch Bow(DMG)
+v1.3 -Added Lothric's Holy Straight Sword (Scaling + Buffable + Weapon Art effect[Rapport+frostbite+slow+stagger] + onEquip        
+            effects[Saint-tree Bellvine cast speed + stamina recovery from warpick + Executioner's GS 6FP/kill)
+v1.4 -Added Divine Pillars of Light (does a combined Wog + force, visible online, additionally from the normal pillars)
+v1.5 -Added Frayed Blade with farron ring effect + pontiff sword effect [credits to the magi for teaching me]
+v1.6 -Added Emit Force with faster/better animation and 2 bullets together
+ 
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Effect Mod - Projected Heal [Epic Buff]-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local ProjHealEpic = { --effect param mods
+    {13557010,0x44,"00 00 40 41"}, --AOE range from 3.25 to 5
+    {13557010,0x48,"00 00 40 41"}, --AOE range from 3.25 to 5
+    {13557010,0x70,"38 64 2B 06"}, --Add Bountiful Light on impact
+    {13557010,0x74,"70 A8 2C 06"}, --Add Sunlight Blade on impact [Only affects buffable weapons?]
+    {13557010,0x78,"F8 3E 2C 06"}, --Add Sacred Oath on impact
+  }
+ 
+  local Timers = { --Effect Duration [-1 Unlimited]
+    {103563000,0x08,"00 00 80 BF"}, --Sacred Oath
+    {103590000,0x08,"00 00 80 BF"}, --Sunlight Blade
+    {103505000,0x08,"00 00 80 BF"}, --Bountiful Light
+  }
+ 
+  ParamIterator("SpEffectParam",Timers,"SetTimers") --Save values on 'enable'
+  ParamIterator("Bullet",ProjHealEpic,"PHEpic") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+   ParamDepatcher("SetTimers")
+   ParamDepatcher("PHEpic") --Restore default values on 'disable'
+end
+ 
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Effect Mod - Lightning Arrow [Epic Buff]-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local LightningArrowBullet = { --effect param mods
+    {13509000,0x14,"00 00 C8 42"}, --Ditance 30 => 100
+    {13509000,0x82,"14 00 00 00"}, --Better Homing
+  }
+  ParamIterator("Bullet",LightningArrowBullet,"LAEpic") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+   ParamDepatcher("LAEpic") --Restore default values on 'disable'
+end
+ 
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Effect Mod - Twisted Wall of Light [Epic Buff]-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local TwistedWall = { --effect param mods
+    {11651000,0x10,"00 00 A0 40"}, --Duration from 2 to 5
+    {11651000,0x44,"00 00 A0 40"}, --AOE range from 3.25 to 5
+    {11651000,0x48,"00 00 A0 40"}, --AOE range from 3.25 to 5
+  }
+ 
+  ParamIterator("Bullet",TwistedWall,"TWEffect") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+   ParamDepatcher("TWEffect") --Restore default values on 'disable'
+end
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Effect Mod - Spook [Epic Buff]-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+local Spook = { --effect param mods
+  {101354000,0x08,"00 00 40 41"}, --Effect Duration 10 sec
+  {101354000,0xA8,"00 00 80 BF"}, --Recover MP
+  {101354000,0xB4,"00 00 80 BF"}, --Recover Stam
+  {101354000,0xFC,"64"}, --Invisible to enemies
+  {101354000,0x15D,"FF"}, --Target allies [add -- if only wants on else]
+}
+ParamIterator("SpEffectParam",Spook,"SEffect") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+ ParamDepatcher("SEffect") --Restore default values on 'disable'
+end
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Effect Mod - Sacred Oath [Epic Buff]-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+local SacredOathBullet = {
+  {13563000,0x74,"38 64 2b 06"}, --Add Bountiful Light
+  {13563000,0x78,"C0 D6 AD 06"}, --Add Untrue Dark Ring
+}
+ 
+local SacredOathEpic = { --effect param mods
+  {103563000,0x08,"00 00 80 BF"}, --Effect Duration [-1 Unlimited]
+  {103563000,0xDC,"00 00 00 00"}, --Remove Fall Damage
+  {103563000,0xFC,"64"}, --Invisible to enemies
+  {103563000,0x100,"00 00 00 00"}, --No noise
+  {103505000,0x08,"00 00 80 BF"}, --Bountiful Light Duration [-1 Unlimited]
+}
+ParamIterator("Bullet",SacredOathBullet,"SacBullet")
+ParamIterator("SpEffectParam",SacredOathEpic,"SOEEffect") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+ ParamDepatcher("SacBullet")
+ ParamDepatcher("SOEEffect") --Restore default values on 'disable'
+end
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Offhand Mod - Izalith Staff-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+local IzalithStaff = { --Good param mods
+  {13200000,0x4C,"38 DD F0 08"}, --Add Main Hand > Steady Chant
+  {13200000,0x50,"39 DD F0 08"}, --Add Off Hand > Steady Chant
+  {13200000,0x54,"38 FB BF 07"}, --Add Executioner's Greatsword Buff
+  {13200000,0x28,"00 00 CE 42"}, --Int Scalling
+  {13200000,0x2C,"00 00 D2 42"}, --Faith Scalling
+  {13200000,0x101+0x01,"13"}, --Enable Pyromancy + Miracle
+  {13200000,0xED+0x01,"00"}, --0 Strength Requirement
+  {13200000,0xEE+0x01,"00"}, --0 Agility Requirement
+  {13200000,0xEF+0x01,"00"}, --0 Magic Requirement
+  {13200000,0xF1,"00"}, --0 Faith Requirement
+}
+ 
+local IzalithEffectsAddon = {
+      {150003000,0x08,"00 00 80 BF"}, -- Main Hand > Steady Chant unlimited duration
+      {150003001,0x08,"00 00 80 BF"}, -- Off Hand > Steady Chant unlimited duration
+}
+ParamIterator("SpEffectParam",IzalithEffectsAddon,"IzaAddonEffect")
+ParamIterator("EquipParamWeapon",IzalithStaff,"IzaStaff") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+ ParamDepatcher("IzaAddonEffect")
+ ParamDepatcher("IzaStaff") --Restore default values on 'disable'
+end
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Mainhand Mod - Irythyll Straight Sword-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+local IrythyllSSword = { --Good param mods
+  {2140000,0x101+0x01,"C8"}, --Buffable
+  {2140000,0xC4,"BE"}, --Physical Damage
+  {2140000,0xC6,"BE"}, --Magic Damage
+  {2140000,0xCA,"BE"}, --Lightning Damage
+  {2140000,0xC8,"BE"}, --Fire Damage
+  {2140000,0x188,"BE"}, --Dark Damage
+  {2140000,0xCC,"3C"}, --Stamina Damage
+  {2140000,0xCE,"22"}, --Poise Damage
+  {2140000,0xDC,"96"}, --+150 Crit Damage
+  {2140000,0xCC,"0"}, --Stamina Consuption
+  {2140000,0x20,"00 00 D2 42"}, --Str Scalling
+  {2140000,0x24,"00 00 D2 42"}, --Dex Scalling
+  {2140000,0x28,"00 00 CE 42"}, --Int Scalling
+  {2140000,0x2C,"00 00 D2 42"}, --Faith Scalling
+  {2140000,0xED+0x01,"00"}, --0 Strength Requirement
+  {2140000,0xEE+0x01,"00"}, --0 Agility Requirement
+  {2140000,0xEF+0x01,"00"}, --0 Magic Requirement
+  {2140000,0xF1,"00"}, --0 Faith Requirement
+}
+ParamIterator("EquipParamWeapon",IrythyllSSword,"IrySword") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+ ParamDepatcher("IrySword") --Restore default values on 'disable'
+end
+ 
+ 
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Mainhand Mod - White Birch Bow-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+local WhiteBurchBow = { --Good param mods
+  --{14120000,0xC4,"BE"}, --Physical Damage
+  --{14120000,0xC6,"BE"}, --Magic Damage
+  {14120000,0xCA,"BE"}, --Lightning Damage
+  --{14120000,0xC8,"BE"}, --Fire Damage
+  --{14120000,0x188,"BE"}, --Dark Damage
+  {14120000,0xCC,"3C"}, --Stamina Damage
+  {14120000,0xCE,"22"}, --Poise Damage
+  {14120000,0xCC,"00"}, --Stamina Consuption
+  {14120000,0x20,"00 00 D2 42"}, --Str Scalling
+  {14120000,0x24,"00 00 D2 42"}, --Dex Scalling
+  {14120000,0x28,"00 00 CE 42"}, --Int Scalling
+  {14120000,0x2C,"00 00 D2 42"}, --Faith Scalling
+  {14120000,0xED+0x01,"00"}, --0 Strength Requirement
+  {14120000,0xEE+0x01,"00"}, --0 Agility Requirement
+  {14120000,0xEF+0x01,"00"}, --0 Magic Requirement
+  {14120000,0xF1,"00"}, --0 Faith Requirement
+}
+ParamIterator("EquipParamWeapon",WhiteBurchBow,"WBBOW") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+ ParamDepatcher("WBBOW") --Restore default values on 'disable'
+end
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Mainhand Mod - Lothric's Holy Straight Sword-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+local LHSsword = { --Good param mods
+  {6280000,0x101+0x01,"C8"}, --Buffable
+  {6280000,0xCE,"22"}, --Poise Damage
+  {6280000,0x30,"00 00 B4 42"}, --Phys Block
+  {6280000,0x34,"00 00 B4 42"}, --Magic Block
+  {6280000,0x3C,"00 00 B4 42"}, --Lightning Block
+  {6280000,0x38,"00 00 B4 42"}, --Fire Block
+  {6280000,0x184,"00 00 B4 42"}, --Dark Block
+  {6280000,0x20,"00 00 D2 42"}, --Str Scalling
+  {6280000,0x24,"00 00 D2 42"}, --Dex Scalling
+  {6280000,0x28,"00 00 CE 42"}, --Int Scalling
+  {6280000,0x2C,"00 00 D2 42"}, --Faith Scalling
+  {6280000,0xED+0x01,"00"}, --0 Strength Requirement
+  {6280000,0xEE+0x01,"00"}, --0 Agility Requirement
+  {6280000,0xEF+0x01,"00"}, --0 Magic Requirement
+  {6280000,0xF1,"00"}, --0 Faith Requirement
+  {6280000,0x4C,"4C A9 C1 07"}, --Cast speed Up from Saint-tree Bellvine
+  {6280000,0x50,"60 E6 C0 07"}, --Add Stamina recovery from warpick
+  {6280000,0x54,"38 FB BF 07"}, --Add Executioner's Greatsword Buff
+}
+ 
+local HolySwordBullet = {
+      {100062800,0x6C,"A0 0C 1B 06"}, --Add Rapport effect
+      {100062800,0x70,"DA FB 01 00"}, --Add Water Slowdown
+      {100062800,0x74,"9C 2C 00 00"}, --Stagger Effect?
+      {100062800,0x78,"31 1A 00 00"}, --100 Frostbite buildup
+}
+ 
+ParamIterator("Bullet",HolySwordBullet,"HSBullet")
+ParamIterator("EquipParamWeapon",LHSsword,"LHSWORD") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+ ParamDepatcher("HSBullet")
+ ParamDepatcher("LHSWORD") --Restore default values on 'disable'
+end
+ 
+ 
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Spell Mod - Divine Pillars of Light-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+local SpellDivinePillars = { --effect param mods
+  {3720000,0xC,"00 00"}, --FP Cost
+  {3720000,0xE,"00 00"}, --Stamina Cost
+  {3720000,0x1D,"00"}, --Slots Used
+  {3720000,0x1E,"00"}, --Int Req
+  {3720000,0x1F,"00"}, --Faith Req
+  {3720000,0x44,"FF 01 01 01"}, --Set bullet 2 visible
+  {3720000,0x68,"BE 91 50 00"}, --Set bullet 2 to warth of gods and force together
+}
+ParamIterator("Magic",SpellDivinePillars,"DPEffect") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+ ParamDepatcher("DPEffect") --Restore default values on 'disable'
+end
+ 
+ 
+ 
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Mainhand Mod - Frayed Blade-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+ 
+local FSwordEffect = {
+      {5060000,0x4C,"48 EA AD 06"}, --Adds Farron ring effect to self
+}
+ 
+local FEffect = { --sets pontiff effect to ring
+      {112061000,0x0C,"0A D7 A3 3C"}, -- changes motion interval to 0.02
+      {112061000,0x128,"7C 43 C0 07"}, -- sets cycleOccurence to "130040700" (pontiff effect)
+}
+ 
+ParamIterator("EquipParamWeapon",FSwordEffect,"FSwordDefault")
+ParamIterator("SpEffectParam",FEffect,"FEffectDefault")
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+ 
+if not syntaxcheck then
+ 
+ParamDepatcher("FEffectDefault")
+ParamDepatcher("FSwordDefault")
+end
+ 
+ 
+ 
+ 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Spell Mod - Emit Force-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+[ENABLE]
+{$lua}
+if not syntaxcheck then
+  local EmitForceBullet = { --effect param mods
+    {13509000,0x14,"00 00 C8 42"}, --Ditance 30 => 100
+    {13509000,0x82,"14 00 00 00"}, --Better Homing
+  }
+ 
+  local SpellEmitForce = { --effect param mods
+  {3532000,0x25,"30"}, --Set cast animation to 48
+  {3532000,0x44,"FF 01 01 01"}, --Set bullet 2 visible
+  {3532000,0x68,"60 7B CE 00"}, --Set bullet 2 to warth of gods
+  {3532000,0xC,"00 00"}, --FP Cost
+  {3532000,0xE,"00 00"}, --Stamina Cost
+  {3532000,0x1D,"00"}, --Slots Used
+  {3532000,0x1E,"00"}, --Int Req
+  {3532000,0x1F,"00"} --Faith Req
+}
+ParamIterator("Magic",SpellEmitForce,"EFSpell")
+  ParamIterator("Bullet",EmitForceBullet,"EFBullet") --Save values on 'enable'
+end
+ 
+{$asm}
+[DISABLE]
+{$lua}
+if not syntaxcheck then
+   ParamDepatcher("EFBullet") --Restore default values on 'disable'
+end
