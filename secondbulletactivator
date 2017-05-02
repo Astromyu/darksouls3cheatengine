@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable>
+  <CheatEntries>
+    <CheatEntry>
+      <ID>94113</ID>
+      <Description>"Set to 010101ff to be able to use 2nd bullet with the animations: 0 1 19 22 25 31 40 45 47 48 "</Description>
+      <LastState Value="010101FF" RealAddress="7FFFF64065C"/>
+      <ShowAsHex>1</ShowAsHex>
+      <VariableType>4 Bytes</VariableType>
+      <Address>+44</Address>
+    </CheatEntry>
+  </CheatEntries>
+</CheatTable>
