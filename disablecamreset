@@ -1,0 +1,35 @@
+ 
+[ENABLE]
+ 
+aobscanmodule(CAMERARESET,DarkSoulsIII.exe,80 BE 6D 29 00 00 00 74)
+alloc(newmem,$1000,"DarkSoulsIII.exe"+855D4F)
+ 
+label(code)
+label(return)
+ 
+registersymbol(cameraResetTmp)
+alloc(cameraResetTmp,1)
+ 
+newmem:
+ 
+code:
+  cmp byte ptr [cameraResetTmp],00
+  jmp return
+ 
+CAMERARESET:
+  jmp newmem
+  nop
+  nop
+return:
+registersymbol(CAMERARESET)
+ 
+[DISABLE]
+ 
+CAMERARESET:
+  db 80 BE 6D 29 00 00 00
+ 
+unregistersymbol(CAMERARESET)
+dealloc(newmem)
+ 
+unregistersymbol(cameraResetTmp)
+dealloc(cameraResetTmp)
