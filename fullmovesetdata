@@ -1,0 +1,1803 @@
+Table of contents
+ 
+1.) Base ID's and what weapon class they represent
+2.) Dump of all weapons' behaviour, base, special, art and what it results in
+3.) Sorted by weapon arts
+4.) Sorted by special
+5.) Knowledge
+6.) Notable ID's
+7.) Interaction Data for testing
+8.) LibreOffice friendly paste
+################################################################################
+20 Dagger
+23 Straightsword
+25 Greatsword
+26 UGS
+27 Rapier
+28 Curved Swords, Curved Greatswords
+29 Katana
+30 Axe
+32 Gretaxe
+33 Hammer
+35 Greathammer
+36 Spear
+38 Halberds & Scythes
+41 Catalysts, Chimes, Flames
+42 Fist
+43 Whip
+44 Bow
+45 Greatbow
+46 Crossbow
+47 Greatshield
+48 Medium Shield, Small Shield
+49 torch
+##############################################################################
+2000    20  71  90  Parrying Dagger     Parry (parry dagger)   
+2001    20  72  100 Bandit Knife        Quickstep  
+2001    20  72  100 Rotten Gru Dagger   Quickstep  
+2001    20  72  101 Corvian Greatknife  Dead Angle          Heavy Slashes R2
+2010    20  153 101 HandMaid's Dagger   Dead Angle 
+2020    20  205 105 Mail Breaker        Shield Splitter Poke r2's
+2030    20  204 102 tailbone short sword    unleash dragon
+2040    20  153 100 Dagger          Quickstep  
+2041    20  72  100 Harpe           Quickstep  
+2041    20  72  108 Murky Handscythe    quickstep
+2042    20  206 103 Scholar's candlestick   guiding light
+2050    20  0   107 Aquamarine dagger   crystal blade  
+2090    20  141 196 Brigand Twindaggers Quickstep           Twin weapon 2h
+ 
+                       
+2300    23  0   200 Longsword       Stance (SS)
+2300    23  0   200 Astora Straightsword    Stance (SS)
+2300    23  54  200 Lothric Knight SS   Stance (SS)         Doublestab r2
+2300    23  0   200 Barbed Straightsword    Stance (SS)
+2300    23  208 205 Irithyll Straightsword  Stance (SS)
+2300    23  0   44  Anri's Straightsword    Stance (SS)
+2300    23  0   200 Morion Blade        Stance (SS)
+2301    23  53  200 Broken Straightsword    Stance (SS)         Forward r2
+2301    23  53  200 Broadsword      Stance (SS)         Forward r2
+2302    23  54  200 Shortsword      Stance (SS)         Doublestab r2
+2304    23  57  201 Darksword       Stomp (Dark Sword       Upwards spin slash r
+2310    23  188 204 Lothric's holy ss   lothric's sacred holy light
+2320    23  209 203 Sunlight Straightsword  oath of sunlight
+2330    23  251 207 ringed knight's ss  ember
+2340    23  207 202 Cleric's candlestick    guiding light
+2390    23  142 40  Gotthard's Twinswords   Gotthard's Spin slash       Twin weapon 2h
+2391    23  236 206 Valorheart      lion stance
+                       
+2500    25  0   52  Bastard Sword       Stomp (Bastard sword)  
+2501    25  80  54  Black Knight Sword  Perseverance (Greatsword)   Unique r2's
+2502    25  0   44  Flamberge       Stance (Greatsword)
+2503    25  157 44  Hollowslayer        Stance (Greatsword)     Poke r2's, spiny r1's
+2505    25  74  44  Claymore        Stance (Greatsword)     Poke r2's
+2508    25  131 50  Wolf Knight's GS    Stance(Wolf Knight's GS)    Long poke 1hr2, golf 2hr2
+2510    25  154 48  Greatsword of Judgement Stance (Poke&Projectile)   
+2511    25  155 49  Twin Princes greatsword Stance sacred light and flame (Yaoi Winsword)  
+2512    25  156 45  Wolnir's Holy Sword Wrath of the Gods  
+2513    25  158 47  mlgs            moonlight vortex
+2514    25  159 46  Firelink Greatsword ember  
+2515    25  0   53  Stormruler      Stance (stomruler) 
+2516    25  221 51  Executioner's GS    Stomp(spin r2) 
+2517    25  196 44  Drakeblood Greatsword   Stance (Greatsword)     Spinny r1's, poke 1hr2
+2518    25  245 55  Onyx Blade      eljFriede's blackflame
+2519    25  7   56  Gael's Greatsword   Blade of Peril          poke 1hr2, 2hr2
+                                   
+2601    26  193 149 Greatsword          Stomp (UGS)         Horizontal 2hr2, rolling sweeps
+2602    26  128 150 Black Knight Greatsword Stomp ( UGS Overhead r2)    Unique r2's, overhead r1's
+2603    26  160 146 Astora Greatsword   Charge (Astora)         Poke r2's, downsmash rolls
+2604    26  189 148 Lorian's Greatsword Stomp (Firetrail r2)   
+2605    26  203 144 Zweihander      Stomp (UGS) Poke r1,     overhead r2
+2610    26  163 151 Fume Knight Greatsword  Stomp (UGS overhead r2)
+2611    26  162 147 Profaned Greatsword Stomp (UGS Buff r2)     Flaming r2's
+2613    26  202 144 Lothric Knight GS   Stomp (UGS)
+2614    26  95  149 Cathedral Knight GS     Stomp (UGS SPIN)        Rolling sweeps
+2620    26  161 145 Farron Greatsword   Parry (Farron)          Twinweapon l1
+2615    26  253 154 Ringed Knight 2UGS  Ember                      
+ 
+2800    28  0   88  Falchion        Spin Slash (Curved Sword)  
+2800    28  0   88  Carthus Curved Sword    Spin Slash (Curved Sword)  
+2806    28  139 160 Dancer's curved swords  Dancer's grace          twinweapon l1
+2807    28  0   92  Carthus Shotel      Spin Slash (Curved Sword)  
+2810    28  165 89  Crescent moon CS    Magic projectile (crescent moon)   
+2811    28  212 90  Storm curved sword  Spin slash (storm knockdown)
+2812    28  247 95  Follower Sabre      Prying Wedge   
+ 
+5300    28  151 93  Scimitar        Spin slash  (overhead) 
+5300    28  151 88  Rotten Ghru     Spin Slash (overhead)  
+5301    28  101 94  Painting Guardian sword Chain spin 
+5302    28  99  92  Shotel          Spin slash (overhead)  
+5303    28  164 91  Pontiff Knight CS   Spin Slash (long range)
+5304    28  137 140 Sellsword Twinblades    Spin slash (combo curved)   Twinweapon l1,
+5304    28  137 141 Grave Warden twin swordsSpin slash (combo curved)   twinweapon l1
+5305    28  1   96  Demon's Scar        Spin Slash (demon edition)  r2 casts
+                       
+5100    28  51  190 Carthus curved GS   Slash (overhead Curved GS) 
+5110    28  195 188 Murakumo        Spin slash (longtriple)
+5110    28  195 191 Exile greatsword    Spin slash (longtriple)
+5112    28  8   192 Harald Curved GS    Sever (butcher knife spam)
+                       
+2700    27  71  90  Rapier          Stance (Rapier)         Offhand parry
+2700    27  0   244 Crystal sage rapier Stance (Rapier)
+2702    27  113 245 Estoc           Shield Splitter (Rapier)    Unique r2's
+2704    27  115 246 Ricard's rapier     Ricard's lunge and press   
+2710    27  187 245 Irithyll rapier     Shield Splitter (Rapier)
+2711    27  237 247 Crow Quills     Quill Dart          Twin weapon l1 
+ 
+2813    29  2   36  Frayed Blade        Hold / Stance (spam and spell)
+                       
+2900    29  0   32  Uchigatana      Stance (Katana)
+2904    29  0   34  Washing pole        Stance (Katana) Slower
+2902    29  90  32  Black Blade     Stance (Katana) Unique r2's
+2903    29  198 33  Bloodlust       Bloodlust (sudoku) 
+2900    29  0   32  Chaos Blade     Stance (Katana)
+2905    29  0   35  Darkdrift       Darkdrift (shield splitter)
+2990    29  144 240 Onikiri & Ubadachi  Onislayer           twinweapon l1
+                       
+3000    30  0   132 Battle Axe      Warcry (Axe)   
+3000    30  0   132 Briigand Axe        Warcry (Axe)   
+3000    30  0   132 Dragonslayer Axe    Warcry (Axe)   
+3001    30  138 184 Winged Knight's 2axes   Chain spin (winged doubleaxe)   twinweapon l1
+3010    23  0   200 Hand Axe        Warcry (Axe)            Light r1
+3002    30  241 136 Millwood Axe        Warcry (Charge)
+3011    30  102 135 Thrall axe      Quickstep (asshole axe)     Light r1
+3030    30  103 133 Butcher Knife       Butcher Sharpen + Regen     special r2's
+3050    30  167 134 Eleonora        Eleonora Sharpen + Regen   
+3060    30  0   132 Serpent Hatchet     Warcry (Axe)   
+                       
+3200    32  0   232 Greataxe        Warcry (Greataxe)   th
+3203    32  107 232 Black Knight Greataxe   Warcry (Greataxe)   Unique r2's
+3205    32  424 238 Earth Seeker        Earthen Wrath
+3210    32  169 236 Yhorm's great Machete   Warcry (Yhorm's)   
+3211    32  168 234 Demon's Gretaxe     Demon fire 
+3212    32  199 235 Dragonslayer Greataxe   Falling bolt   
+3213    32  0   237 Great Machete       Sharpen (Great Machete)
+                       
+3300    33  9   76  Mace            Perseverance (Hammer class)
+3300    33  0   76  Morning star        Perseverance (Hammer class)
+3301    33  228 79  Warpick Stamina     regen buff          trust damage
+3301    33  220 78  Heysel Pick     Steady Chant            Cast r2
+3302    33  59  77  Club            Warcry (hammer)         Jumping overhead r2
+3302    33  0   76  Blacksmith's Hammer Perseverance (Hammer class)
+3310    33  210 77  Reinforced club     Warcry (hammer)         Sweeping greatclub r2's
+3390    33  148 28  Drang Twin Hammers  Spin slash (combo hammer)   twinweapon l1
+                       
+3500    35  0   176 Great Mace      Perseverance (Greathammer) 
+3500    35  173 176 Vordt's Greathammer Perseverance (Greathammer) 
+3500    35  0   176 Dragontooth     Perseverance (Greathammer) 
+3503    35  70  176 Smough's Greathammer    Perseverance (Greathammer)  Jumping ugly r2
+3504    35  172 178 Gargoyle Flame Hammer   Flame surge
+3505    35  174 177 Old King's Greathammer  Flaming perseverance   
+3506    35  69  179 Large Club      Warcry (greatclub)      Overhead jumping r2
+3507    35  213 179 Great Club      Warcry (greatclub)      Sweeping lunge r2
+3508    35  0   181 Wooden Hammer       Spin sweep (Greathammer)   
+3509    35  0   181 Spiked Mace     Spin sweep (Greathammer)   
+3510    35  211 180 morne's Greathammer Morne's Rage
+3511    35  243 183 Quakestone Hammer   Quake
+3512    35  3   184 Ledo's Great Hammer Call to Stone           Special r2
+3520    35  171 182 pickaxe         Perseverance (Greathammer)  Overhead r1's
+                       
+3600    36  0   20  Winged Spear        Charge (spear) 
+3600    36  178 24  Golden Ritual Spear Steady Chant            cast r2
+3600    36  0   20  Rotten ghru spear   Charge (spear) 
+3600    36  0   30  Holy bident     Charge (spear) 
+3603    36  68  28  Dragonslayer spear  Charge (buff+projectile)    Upward's r2
+3604    36  63  31  Partizan        Spin sweep (partizan)       Horizontal r2's
+3607    36  134 27  Four-pronged-plow   Charge (fall down at end)  
+3608    36  67  20  Pike            Charge  (spear) running      backstep r1's
+3608    36  67  20  Lothric Knight long Spe Charge (spear)          running backstep r1's
+3610    36  177 26  Glorious Greatlance Charge (spear)          running backstep r1's and r2's
+3611    36  176 21  Dragonslayer swordspear falling bolt (ranged and buff) 
+3612    36  4   34  Lothric Knight War Bann Lothric War Banner
+3620    36  200 23  Arstor's spear      shield splitter         halberd 2hr1, halberd 1hr2
+3620    36  200 23  Spear           shield splitter
+3630    36  0   25  Tailbone spear      Unleash Dragon
+3635    36  246 32  Follower Javelin    Hurl Spear
+3640    36  197 22  Yorshka's Spear     Pacify (buff)
+3650    36  175 29  Gargoyle Flame Spear    Kindled Charge 
+3660    36  0   20  Jailers solderwwng iron Charge (spear) 
+3670    36  252 33  Ringed Knight's Spear   Ember
+3690    36  145 84  Drang Twinspears    Charge (spear)          twin weapon 2h
+                       
+3802    38  0   120 Lucerne         Spin Sweep (Halberd)   
+3805    38  112 120 Black Knight Glaive Spin Sweep (Halberd)        Unique R2's
+3806    38  201 121 Winged Knight's Halberd Chain spin (winged halberd)
+3807    38  21  122 Gundyr's Halberd    Gundyr's Charge
+3809    38  108 126 Halberd         Charge (halberd)        Poke r1
+3809    38  108 127 Red-hilted Halberd  Perseverance (Halberd)      Poke r1
+3810    38  217 124 Immolation Tinder   Flame projectile (immotinder)   sorcery r2
+3811    38  0   125 Crescent Axe        Warcry (crescent axe)  
+3812    38  0   120 Glaive          Spin Sweep (Halberd)
+3813    38  248 128 Splitleaf Greatsword    Wind Wheel
+3814    38  5   129 Crucifix ma king    foolishness boom        mix with large club
+                       
+5000    38  50  220 Scythe          Neckswipe  
+5000    38  50  220 Corvian Scythe      Neckswipe  
+5010    38  179 222 Pontiff Knight Scythe   Cold (pontiff scythe)  
+5030    38  232 224 Friede          combo and ice
+                       
+4300    43  231 64  Whip            Whip weapon art
+4300    43  231 64  Notched Whip        Whip weapon art
+4300    43  231 64  Spotted Whip        Whip weapon art
+4300    43  229 65  Witch's Locks       Fire whip
+4302    43  234 1   Rose of Ariandel    Awakening  
+ 
+4101    41  0   152 Sorcerer's Staff    Steady Chant
+4101    41  0   152 Heretic's Staff     Steady Chant
+4101    41  0   152 Witchtree Branch    Steady Chant
+4101    41  224 154 Storyteller's STaff Poison Spores
+4101    41  0   152 Mendicant's Staff   Steady Chant
+4101    41  10  156 Murky Longstaff     Chant from the Depths
+4101    41  0   152 Izalith STaff       steady chant
+4101    41  0   152 Man-grub's staff    Steady Chant
+4108    41  9   157 Preacher's Right Arm    Feasting Branch
+4101    41  223 153 Sage's Crystal Staff    Steady Chant (sage)
+ 
+4102    41  127 252 Talisman        Unfaltering Prayer
+4102    41  127 252 Canvas Talisman     Unfaltering Prayer
+4102    41  127 255 Saint's talisman    Unfaltering Prayer
+4102    41  127 0   Sunlight Talisman   Unfaltering Prayer
+4102    41  185 253 Cleric's Sacred Chime   Gentle Prayer
+4102    41  185 253 Priest's Chime      Gentle Prayer
+4102    41  185 253 Saint-tree Bellvine Gentle Prayer
+4102    41  185 253 Yorshka's Chime     Gentle Prayer
+4102    41  185 253 Caitha's Chime      Gentle Prayer
+4107    41  11  2   Sacred Chime of Filianore   Pray for Favor
+ 
+4105    41  149 96  Pyromancy Flame     Combustion
+4106    41  239 97  Pyromancer's Parting Flame  Parting Flame (estus reg)
+                       
+4200    42  152 167 Caestus         Perseverance (Fist)
+4205    42  152 165 Demon Fist      Fire tornado   
+4203    42  123 166 Dark Hand       Life drain          can't be two-handed
+4202    42  146 8   Claw            Jumping slash (onislayer)   Claw moveset
+4202    42  go146   10  Manikin claw        Quickstep (claws)       claw moveset
+4201    42  152 10  Fist            basic fist have no weapon art) 
+ 
+4400    44  81  108 Short Bow       Rapid Fire
+4400    44  81  108 Composite Bow       Rapid Fire
+4400    44  0   109 Longbow         Puncture
+4400    44  82  110 Black Bow of Pharis Pharis Triple-Shot
+4400    44  249 112 White Birch Bow     Unseen Arrow
+4400    44  230 111 Darkmoon Longbow    Darkmoon Arro
+ 
+4400    45  83  208 Dragonslayer Greatbow   Puncturing Arrow
+4400    45  184 209 Onislayer Greatbow  Puncturing ARrow
+4400    45  244 210 Millwood Greatbow   Pierce Earth
+ 
+4600    46  0   53  Light Crossbow      Tackle
+4600    46  85  53  Sniper Crossbow     Tackle
+4600    46  0   53  Arbalest        Tackle
+4600    46  0   53  Knight's Crossbow   Tackle
+4600    46  84  53  Avelyn          Tackle
+4600    64  6   55  Repeating Crossbow  Repeat Fire
+ 
+4700    47  0   228 Black Iron Greatshield      Shield Bash
+4700    47  0   228 Lothric Knight Greatshield  Shield Bash
+4700    47  0   228 Cathedral Knight Greatshield    Shield Bash
+4700    47  0   228 Stone Greatshield   Shield Bash
+4700    47  0   228 Greatshield of Glory    Shield Bash
+4700    47  0   70  Curse Ward Greatshield  Weapon Skill
+4700    47  0   228 Yhorm's Greatshield Shield Bash
+4702    47  126 248 Bonewheel Shield    Wheel of Fate
+4703    47  94  238 Havel's Greatshield Stone Flesh
+4704    47  225 228 Dragonslayer GreatshieldShield Bash
+4705    47  222 229 Moaning Shield      Moan
+4706    47  250 2   Giant door shield   lockout
+4707    47  255 249 Dragonhead Greatshield  Dragon Roar
+ 
+4800    48  159 91  Large Leather Shield    Parry (medium shield)
+4800    48  150 91  Carthus Shield      Parry (medium shield)
+4800    48  150 91  East-West Shield    Parry (medium shield)
+4800    48  150 91  Blue Wooden Shield  Parry (medium shield)
+4800    48  150 91  Round Shield        Parry (medium shield)
+4800    48  150 80  Wargod Wooden Shield    Weapon SKill
+4800    48  150 80  Follower Shield     Weapon SKill
+4800    48  150 91  Kite Shield     Parry (medium shield)
+4800    48  150 91  Knight Shield       Parry (medium shield)
+4800    48  150 91  Lothric Knight Shield   Parry (medium shield)
+4800    48  150 80  Spider Shield       Weaponn Skill
+4800    48  150 80  Stone Parma     Weapon Skill
+4800    48  227 129 Spiked Shield       Shield Strike
+4800    48  150 128 Porcine shield      Shield Bash
+4800    48  150 80  Shield of Want      Weapon Skill
+4800    48  150 91  Grass Crest Shield  Parry (medium shield)
+4800    48  150 91  Dragon Crest Shield Parry (medium shield)
+4800    48  150 80  Ethereal Oak Shield Weapon Skill
+4800    48  150 91  Silver Knight Shield    Parry (medium shield)
+4800    48  150 80  Black Knight Shield Weapon Skill
+4800    48  150 80  Pontiff Knight Shield   Weapon SKill
+4800    48  0   60  Eastern Iron Shield Weapon Skill
+4800    48  0   90  Llewellyn Shield    Parry (small shield)
+4800    48  0   90  Hawkwood's Shield   Parry (small shield)
+4800    48  0   90  Iron Round Shield   Parry (small shield)
+4800    48  0   72  Ghru Rotshield      Shield Bash
+4800    48  0   72  Plank Shield        Shield Bash
+4800    48  0   60  Warrior's Round Shield  Weapon Skill
+4800    48  0   90  Elkhorn Round Shield    Parry (small shield)
+4800    48  0   90  Caduceus Round Shield   Parry (small shield)
+4800    48  0   90  Red and White Shield    Parry (small shield)
+4800    48  0   90  Crimson PArma       Parry (small shield)
+4800    48  0   90  Leather Shield      Parry (small shield)
+4800    48  91  90  Small Leather Shield    Parry (parry shield)
+4800    48  91  90  Buckler         Parry (parry shield)
+4800    48  91  90  Target Shield       Parry (parry shield)
+4803    48  93  128 Pierce Shield       Shield Bash
+4804    48  150 93  Golden Wing Crest ShieldSpell Parry
+4804    48  214 92  Sacred Bloom Shield Spell Parry
+4805    48  0   90  Golden Falcon Shield    Parry
+4806    48  254 73  Dragonhead shield   Dragon Breath
+ 
+4900    49  0   0   Torch           -
+#############################################################################
+art id's
+base/special/art
+41  127 0   Unfaltering Prayer
+49  0   0   nonoe
+43  234 1   Awakening
+41  11  2   Pray for Favor
+47  250 2   lockout
+42  146 8   Jumping slash (onislayer)
+42  146 10  Quickstep (claws)
+42  152 10  Fist
+36  0   20  Charge (spear)
+36  0   20  Charge (spear)
+36  67  20  Charge
+36  67  20  Charge (spear)
+36  0   20  Charge (spear)
+36  176 21  falling bolt (ranged and buff)
+36  197 22  Pacify (buff)
+36  200 23  shield splitter
+36  200 23  shield splitter
+36  178 24  Steady Chant
+36  0   25  Unleash Dragon
+36  177 26  Charge (spear)
+36  134 27  Charge (fall down at end)
+33  148 28  Spin slash (combo hammer)
+36  68  28  Charge (buff+projectile)
+36  175 29  Kindled Charge
+36  0   30  Charge (spear)
+36  63  31  Spin sweep (partizan)
+29  0   32  Stance (Katana)
+29  90  32  Stance (Katana)
+29  0   32  Stance (Katana)
+36  246 32  Hurl Spear
+29  198 33  Bloodlust (sudoku)
+36  252 33  Ember
+29  0   34  Stance (Katana)
+36  4   34
+29  0   35  Darkdrift (shield splitter)
+29  2   36  Hold / Stance (spam and spell)
+23  142 40  Gotthard's Spin slash
+23  0   44  Stance (SS)
+25  0   44  Stance (Greatsword)
+25  157 44  Stance (Greatsword)
+25  74  44  Stance (Greatsword)
+25  196 44  Stance (Greatsword)
+25  156 45  Wrath of the Gods
+25  159 46  ember
+25  158 47  Moonlight Vortex
+25  154 48  Stance (Poke&Projectile)
+25  155 49  Stance Sacred holy light and flame
+25  131 50  Stance(Wolf Knight's GS)
+25  221 51  Stomp(spin r2)
+25  0   52  Stomp (Bastard sword)
+25  0   53  Stance (Stormruler)
+46  0   53  Tackle
+46  85  53  Tackle
+46  0   53  Tackle
+46  0   53  Tackle
+46  84  53  Tackle
+25  80  54  Perseverance (Greatsword)
+25  245 55  eljFriede's blackflame
+64  6   55  Repeat Fire
+25  7   56  Blade of Peril
+48  0   60  Weapon Skill
+48  0   60  Weapon Skill
+43  231 64  Whip weapon art
+43  231 64  Whip weapon art
+43  231 64  Whip weapon art
+43  229 65  Fire whip
+47  0   70  Weapon Skill
+48  0   72  Shield Bash
+48  0   72  Shield Bash
+48  254 73  Dragon Breath
+33  9   76  Perseverance (Hammer class)
+33  0   76  Perseverance (Hammer class)
+33  0   76  Perseverance (Hammer class)
+33  59  77  Warcry (hammer)
+33  210 77  Warcry (hammer)
+33  220 78  Steady Chant
+33  228 79  Stamina
+48  150 80  Weapon SKill
+48  150 80  Weapon SKill
+48  150 80  Weaponn Skill
+48  150 80  Weapon Skill
+48  150 80  Weapon Skill
+48  150 80  Weapon Skill
+48  150 80  Weapon Skill
+48  150 80  Weapon SKill
+36  145 84  Charge (spear)
+28  0   88  Spin Slash (Curved Sword)
+28  0   88  Spin Slash (Curved Sword)
+28  151 88  Spin Slash (overhead)
+28  165 89  Magic projectile (crescent moon)
+20  71  90  Parry (parry dagger)
+28  212 90  Spin slash (storm knockdown)
+27  71  90  Stance (Rapier)
+48  0   90  Parry (small shield)
+48  0   90  Parry (small shield)
+48  0   90  Parry (small shield)
+48  0   90  Parry (small shield)
+48  0   90  Parry (small shield)
+48  0   90  Parry (small shield)
+48  0   90  Parry (small shield)
+48  0   90  Parry (small shield)
+48  91  90  Parry (parry shield)
+48  91  90  Parry (parry shield)
+48  91  90  Parry (parry shield)
+48  0   90  Parry
+28  164 91  Spin Slash (long range)
+48  159 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+48  150 91  Parry (medium shield)
+28  0   92  Spin Slash (Curved Sword)
+28  99  92  Spin slash (overhead)
+48  214 92  Spell Parry
+28  151 93  Spin slash  (overhead)
+48  150 93
+28  101 94  Chain spin
+28  247 95  Prying Wedge
+28  1   96  Spin Slash (demon edition)
+41  149 96  Combustion
+41  239 97  Parting Flame (estus reg)
+20  72  100 Quickstep
+20  72  100 Quickstep
+20  153 100 Quickstep
+20  72  100 Quickstep
+20  72  101 Dead Angle
+20  153 101 Dead Angle
+20  204 102 unleash dragon
+20  206 103 guiding light
+20  205 105 Shield Splitter
+20  0   107 crystal blade
+20  72  108 quickstep
+44  81  108 Rapid Fire
+44  81  108 Rapid Fire
+44  0   109 Puncture
+44  82  110 Pharis Triple-Shot
+44  230 111 Darkmoon Arro
+44  249 112 Unseen Arrow
+38  0   120 Spin Sweep (Halberd)
+38  112 120 Spin Sweep (Halberd)
+38  0   120 Spin Sweep (Halberd)
+38  201 121 Chain spin (winged halberd)
+38  21  122 Gundyr's Charge
+38  217 124 Flame projectile (immotinder)
+38  0   125 Warcry (crescent axe)
+38  108 126 Charge (halberd)
+38  108 127 Perseverance (Halberd)
+38  248 128 Wind Wheel
+48  150 128 Shield Bash
+48  93  128 Shield Bash
+38  5   129 foolishness boom
+48  227 129 Shield Strike
+30  0   132 Warcry (Axe)
+30  0   132 Warcry (Axe)
+30  0   132 Warcry (Axe)
+30  0   132 Warcry (Axe)
+30  103 133 Butcher Sharpen + Regen
+30  167 134 Eleonora Sharpen + Regen
+30  102 135 Quickstep (asshole axe)
+30  241 136 Warcry (Charge)
+28  137 140 Spin slash (combo curved)
+28  137 141 twinweapon l1
+26  203 144 Stomp (UGS)
+26  202 144 Stomp (UGS)
+26  161 145 Parry (Farron)
+26  160 146 Charge (Astora)
+26  162 147 Stomp (UGS Buff r2)
+26  189 148 Stomp (Firetrail r2)
+26  193 149 Stomp (UGS)
+26  95  149 Stomp (UGS SPIN)
+26  128 150 Stomp ( UGS Overhead r2)
+26  163 151 Stomp (UGS overhead r2)
+41  0   152 Steady Chant
+41  0   152 Steady Chant
+41  0   152 Steady Chant
+41  0   152 Steady Chant
+41  0   152 steady chant
+41  0   152 Steady Chant
+41  223 153 Steady Chant (sage)
+26  253 154 Ember
+41  224 154 Poison Spores
+41  10  156 Chant from the Depths
+41  9   157 Feasting Branch
+28  139 160 Dancer's grace
+42  152 165 Fire tornado
+42  123 166 Life drain
+42  152 167 Perseverance (Fist)
+35  0   176 Perseverance (Greathammer)
+35  173 176 Perseverance (Greathammer)
+35  0   176 Perseverance (Greathammer)
+35  70  176 Perseverance (Greathammer)
+35  174 177 Flaming perseverance
+35  172 178 Flame surge
+35  69  179 Warcry (greatclub)
+35  213 179 Warcry (greatclub)
+35  211 180 Morne's Rage
+35  0   181 Spin sweep (Greathammer)
+35  0   181 Spin sweep (Greathammer)
+35  171 182 Perseverance (Greathammer)
+35  243 183 Quake
+30  138 184 Chain spin (winged doubleaxe)
+35  3   184 Call to Stone
+28  195 188 Spin slash (longtriple)
+28  51  190 Slash (overhead Curved GS)
+28  195 191 Spin slash (longtriple)
+28  8   192 Sever (butcher knife spam)
+20  141 196 Quickstep
+23  0   200 Stance (SS)
+23  0   200 Stance (SS)
+23  54  200 Stance (SS)
+23  0   200 Stance (SS)
+23  0   200 Stance (SS)
+23  53  200 Stance (SS)
+23  53  200 Stance (SS)
+23  54  200 Stance (SS)
+30  0   200 Warcry (Axe)
+23  57  201 Stomp (Dark Sword
+23  207 202 guiding light
+23  209 203 oath of sunlight
+23  188 204 lothric's sacred holy light
+23  208 205 Stance (SS)
+23  236 206 lion stance
+23  251 207 ember
+45  83  208 Puncturing Arrow
+45  184 209 Puncturing ARrow
+45  244 210 Pierce Earth
+38  50  220 Neckswipe
+38  50  220 Neckswipe
+38  179 222 Cold (pontiff scythe)
+38  232 224 combo and ice
+47  0   228 Shield Bash
+47  0   228 Shield Bash
+47  0   228 Shield Bash
+47  0   228 Shield Bash
+47  0   228 Shield Bash
+47  0   228 Shield Bash
+47  225 228
+47  222 229 Moan
+32  0   232 Warcry (Greataxe)
+32  107 232 Warcry (Greataxe)
+32  168 234 Demon fire
+32  199 235 Falling bolt
+32  169 236 Warcry (Yhorm's)
+32  0   237 Sharpen (Great Machete)
+32  424 238 Earthen Wrath
+47  94  238 Stone Flesh
+29  144 240 Onislayer
+27  0   244 Stance (Rapier)
+27  113 245 Shield Splitter (Rapier)
+27  187 245 Shield Splitter (Rapier)
+27  115 246 Ricard's lunge and press
+27  237 247 Quill Dart
+47  126 248 Wheel of Fate
+47  255 249 Dragon Roar
+41  127 252 Unfaltering Prayer
+41  127 252 Unfaltering Prayer
+41  185 253 Gentle Prayer
+41  185 253 Gentle Prayer
+41  185 253 Gentle Prayer
+41  185 253 Gentle Prayer
+41  185 253 Gentle Prayer
+41  127 255 Unfaltering Prayer
+##########################################
+special id's
+0   Aquamarine dagger
+0   Longsword
+0   Astora Straightsword
+0   Barbed Straightsword
+0   Anri's Straightsword
+0   Morion Blade
+0   Bastard Sword
+0   Flamberge
+0   Stormruler
+0   Falchion
+0   Carthus Curved Sword
+0   Carthus Shotel
+0   Crystal sage rapier
+0   Uchigatana
+0   Washing pole
+0   Chaos Blade
+0   Darkdrift
+0   Battle Axe
+0   Briigand Axe
+0   Dragonslayer Axe
+0   Hand Axe
+0   Serpent Hatchet
+0   Greataxe
+0   Great Machete
+0   Morning star
+0   Blacksmith's Hammer
+0   Great Mace
+0   Dragontooth
+0   Wooden Hammer
+0   Spiked Mace
+0   Winged Spear
+0   Rotten ghru spear
+0   Holy bident
+0   Tailbone spear
+0   Jailers solderwwng iron
+0   Lucerne
+0   Crescent Axe
+0   Glaive
+0   Sorcerer's Staff
+0   Heretic's Staff
+0   Witchtree Branch
+0   Mendicant's Staff
+0   Izalith STaff
+0   Man-grub's staff
+0   Longbow
+0   Light Crossbow
+0   Arbalest
+0   Knight's Crossbow
+0   Black Iron Greatshield
+0   Lothric Knight Greatshield
+0   Cathedral Knight Greatshield
+0   Stone Greatshield
+0   Greatshield of Glory
+0   Curse Ward Greatshield
+0   Yhorm's Greatshield
+0   Eastern Iron Shield
+0   Llewellyn Shield
+0   Hawkwood's Shield
+0   Iron Round Shield
+0   Ghru Rotshield
+0   Plank Shield
+0   Warrior's Round Shield
+0   Elkhorn Round Shield
+0   Caduceus Round Shield
+0   Red and White Shield
+0   Crimson PArma
+0   Leather Shield
+0   Golden Falcon Shield
+0   Torch
+1   Demon's Scar
+2   Frayed Blade
+3   Ledo's Great Hammer
+4   Lothric Knight War Bann Lothric War Banner
+5   Crucifix ma king
+6   Repeating Crossbow
+7   Gael's Greatsword
+8   Harald Curved GS
+9   Mace
+9   Preacher's Right Arm
+10  Murky Longstaff
+11  Sacred Chime of Filianore
+21  Gundyr's Halberd
+50  Scythe
+50  Corvian Scythe
+51  Carthus curved GS
+53  Broken Straightsword
+53  Broadsword
+54  Lothric Knight SS
+54  Shortsword
+57  Darksword
+59  Club
+63  Partizan
+67  Pike
+67  Lothric Knight long Spe
+68  Dragonslayer spear
+69  Large Club
+70  Smough's Greathammer
+71  Parrying Dagger
+71  Rapier
+72  Bandit Knife
+72  Rotten Gru Dagger
+72  Corvian Greatknife
+72  Harpe
+72  Murky Handscythe
+74  Claymore
+80  Black Knight Sword
+81  Short Bow
+81  Composite Bow
+82  Black Bow of Pharis
+83  Dragonslayer Greatbow
+84  Avelyn
+85  Sniper Crossbow
+90  Black Blade
+91  Small Leather Shield
+91  Buckler
+91  Target Shield
+93  Pierce Shield
+94  Havel's Greatshield
+95  Cathedral Knight GS
+99  Shotel
+101 Painting Guardian sword
+102 Thrall axe
+103 Butcher Knife
+107 Black Knight Greataxe
+108 Halberd
+108 Red-hilted Halberd
+112 Black Knight Glaive
+113 Estoc
+115 Ricard's rapier
+123 Dark Hand
+126 Bonewheel Shield
+127 Talisman
+127 Canvas Talisman
+127 Saint's talisman
+127 Sunlight Talisman
+128 Black Knight Greatsword
+131 Wolf Knight's GS
+134 Four-pronged-plow
+137 Sellsword Twinblades
+137 Grave Warden twin swordsSpin slash (combo curved)
+138 Winged Knight's 2axes
+139 Dancer's curved swords
+141 Brigand Twindaggers
+142 Gotthard's Twinswords
+144 Onikiri & Ubadachi
+145 Drang Twinspears
+146 Claw
+148 Drang Twin Hammers
+149 Pyromancy Flame
+150 Carthus Shield
+150 East-West Shield
+150 Blue Wooden Shield
+150 Round Shield
+150 Wargod Wooden Shield
+150 Follower Shield
+150 Kite Shield
+150 Knight Shield
+150 Lothric Knight Shield
+150 Spider Shield
+150 Stone Parma
+150 Porcine shield
+150 Shield of Want
+150 Grass Crest Shield
+150 Dragon Crest Shield
+150 Ethereal Oak Shield
+150 Silver Knight Shield
+150 Black Knight Shield
+150 Pontiff Knight Shield
+150 Golden Wing Crest ShieldSpell Parry
+151 Scimitar
+151 Rotten Ghru
+152 Caestus
+152 Demon Fist
+152 Fist
+153 HandMaid's Dagger
+153 Dagger
+154 Greatsword of Judgement
+155 Twin Princes greatsword
+156 Wolnir's Holy Sword
+157 Hollowslayer
+158 mlgs
+159 Firelink Greatsword
+159 Large Leather Shield
+160 Astora Greatsword
+161 Farron Greatsword
+162 Profaned Greatsword
+163 Fume Knight Greatsword
+164 Pontiff Knight CS
+165 Crescent moon CS
+167 Eleonora
+168 Demon's Gretaxe
+169 Yhorm's great Machete
+171 pickaxe
+172 Gargoyle Flame Hammer
+173 Vordt's Greathammer
+174 Old King's Greathammer
+175 Gargoyle Flame Spear
+176 Dragonslayer swordspear
+177 Glorious Greatlance
+178 Golden Ritual Spear
+179 Pontiff Knight Scythe
+184 Onislayer Greatbow
+185 Cleric's Sacred Chime
+185 Priest's Chime
+185 Saint-tree Bellvine
+185 Yorshka's Chime
+185 Caitha's Chime
+187 Irithyll rapier
+188 Lothric's holy ss
+189 Lorian's Greatsword
+193 Greatsword  
+195 Murakumo
+195 Exile greatsword
+196 Drakeblood Greatsword
+197 Yorshka's Spear
+198 Bloodlust
+199 Dragonslayer Greataxe
+200 Arstor's spear
+200 Spear
+201 Winged Knight's Halberd
+202 Lothric Knight GS
+203 Zweihander
+204 tailbone short sword
+205 Mail Breaker
+206 Scholar's candlestick
+207 Cleric's candlestick
+208 Irithyll Straightsword
+209 Sunlight Straightsword
+210 Reinforced club
+211 morne's Greathammer
+212 Storm curved sword
+213 Great Club
+214 Sacred Bloom Shield
+217 Immolation Tinder
+220 Heysel Pick
+221 Executioner's GS
+222 Moaning Shield
+223 Sage's Crystal Staff
+224 Storyteller's STaff
+225 Dragonslayer GreatshieldShield Bash
+227 Spiked Shield
+228 Warpick
+229 Witch's Locks
+230 Darkmoon Longbow
+231 Whip
+231 Notched Whip
+231 Spotted Whip
+232 Friede
+234 Rose of Ariandel
+236 Valorheart
+237 Crow Quills
+239 Pyromancer's Parting Flame
+241 Millwood Axe
+243 Quakestone Hammer
+244 Millwood Greatbow
+245 Onyx Blade
+246 Follower Javelin
+247 Follower Sabre
+248 Splitleaf Greatsword
+249 White Birch Bow
+250 Giant door shield
+251 ringed knight's ss
+252 Ringed Knight's Spear
+253 Ringed Knight 2UGS
+254 Dragonhead shield
+255 Dragonhead Greatshield
+224 Earth Seeker
+246 Manikin claw
+##########################################
+Weapon art ID changes nothing but the weapon art.
+    Is affected by Base.
+        e.g. base ID changes what stance you'll take (rapier vs katana vs gs and so on)
+    Is affected by Special.
+        e.g. wether you perform a spin (special 95) or an upwards thrust (special 161) with stomp (169 art, base 26)
+    Is affected by Behaviour ID
+        e.g. wether or not you get a hitbox.
+    Combinations may be required. Needs testing.
+Special ID changes r2, r1, weapon art
+        e.g. hollowslayer gets spinny 2hr1 and poke 2hr2, this is based on the special id 157 compared to flamberge's 0
+    R1 changes seem to depend on base ID.
+    R2 changes barely depend on base ID.
+    Using a weapon's special ID as Base ID seems to be relevant, needs testing.
+Base ID does very basic stuff.
+    Sets r1 and r2.
+    Variations of the r1 and r2 are created by special id.
+    Changes stances.
+ 
+Changing a weapon's moveset while in stance changes the followups. E.g. go in straightsword stance, change base value to 29 (katana), you can parry or dash.
+##########################################
+Additional stances on halberd, spear, 50, 144, 146, 154, 155, 232, 236, 248, 250, 251.
+Stances are based on base and special ID.
+Farron stomp upwards thrust on 26/161/169
+Dual wield moveset stance thingy on 144/0/50 (doesnt work on every weapon, idk just tested that today)
+Scythes: Weapon Art 222 on special 50 results in some cool gesture / attack.
+Farron GS: Weapon art 149 for special stomp.
+Twinswords: Weapon art 140, special move 143, behaviour 2990, basic 29 on warden's gave me tracer movesets.
+Dragonslayer greatbow with weapon art 110 gives gundyr's kick, albeit not working
+Weapon Art: 143
+Special Moveset 143
+and if you want the authentic look,
+uequipModelId:1608.
+Some weapon arts seem to work almost always, such as ricard's lunge and press, astora charge, falling bolt, Quill Dart, Shield Splitter, most stances (if your weapon has one naturally)
+###########################################
+[Edit] Most of the time this only applies to the specific weapon in question with the specific behavior and moveset values, sorry Aerthas please don't find me and beat me. fgt
+ 
+Light Crossbow
+153 - Steady Chant 2H
+154 - Steady Chant 2H
+155 - Steady Chant 2H
+156 - Steady Chant 2H
+157 - Steady Chant (Performs Precher's Arm weapon art if you press it multiple times and will do so for as many times as you press it) 2H
+252 - Unfaultering Prayer 1H 2H
+253 - Steady Chant 2H
+254 - Weird Dash Forward 2H
+255 - Unfaultering Prayer 2H
+ 
+ 
+Irithyll Straight Sword
+0 to 89 - Weapon Skill 1H
+90 to 94 - Weird Gesture 1H 2H (Might be a parry)
+95 to 98 - Weapon Skill 1H
+99 - Weird Gesture 1H 2H (Might be a parry)
+100 - Quickstep 2H
+101 - Fresh Prince Ricard's Rapier Weapon Art 2H1
+102 - Dragonslayer Greataxe Weapon Art 2H
+103 - Fresh Prince Ricard's Rapier Weapon Art 2H1
+104 - Dragonslayer Greataxe Weapon Art 2H
+105 - Fresh Prince Ricard's Rapier Weapon Art 2H1
+106 to 107 - Stance 2H
+108 - Quickstep 2H
+109 to 199 - Weapon Skill 1H
+200 - Stance 2H
+201 - Stomp 2H
+202 - Fresh Prince Ricard's Rapier Weapon Art 2H
+203 - Fresh Prince Ricard's Rapier Weapon Art 2H
+204 - Stance 2H
+205 - Stance 2H
+206 - Stance 2H
+207 - Stance 2H
+208 to 255 - Weapon Skill 1H
+ 
+Uchigatana
+0 to 31 - Weapon Skill 1H
+32 - Hold 2H
+33 - Dragonslayer Greataxe Weapon Art 2H
+34 to 36 - Hold 2H
+37 to 131 - Weapon Skill 1H
+132 - Warcry
+133 to 134 - Dragonslayer Greataxe Weapon Art 2H
+135 - Quckstep 2H
+136 - Warcry 2H
+137 to 231 - Weapon Skill 1H
+232 - Warcry 2H
+233 to 235 - Dragonslayer Greataxe Weapon Art 2H
+236 - Warcry 2H
+237 - Dragonslayer Greataxe Weapon Art 2H
+238 - Warcry 2H
+239 to 255 - Weapon Skill 1H
+ 
+Dragonslayer Spear
+0 to 19 - Weapon Skill 1H
+20 - Charge 2H
+21 to 22 - Tailbone Spearnado Weapon Art 2H
+23 - Charge 2H
+24 - Steady Chant (Magic Attack Up and spear glows blue) 2H
+25 - Tailbone Spearnado Weapon Art 2H
+26 to 30 - Charge 2H
+31 - Glaive Sprinaroo 2H
+32 - Tailbone Spearnado Weapon Art 2H
+33 - Charge 2H
+34 - Tailbone Spearnado Weapon Art 2H
+35 to 119 - Weapon Skill 2H
+120 to 121 - Glaive Spinaroo 2H
+122 - Charge 2H
+123 to 124 - Tailbone Spearnado Weapon Art 2H
+125 - Warcry 2H
+126 - Charge 2H
+127 - Perserverence 2H
+128 - Spear Stance 2H
+129 - Crucifix of The Mad RNG Weapon Art 2H (Only perserverence works)
+130 to 219 - Weapon Skill 1H
+220 - Neck Swipe 2H
+221 to 223 - Tailbone Spearnado Weapon Art 2H
+224 - Spear Stance 2H
+225 to 255 - Weapon Skill 1H
+ 
+Valorheart
+0 to 89 - Weapon Skill 1H
+90 to 93 - Weird Animation (Might be a parry) 1H 2H
+94 to 98 - Weapon Skill 1H
+99 - Weird Animation (Might be a parry) 1H 2H
+100 - Quickstep 2H
+101 - Fresh Prince Ricard's Rapier Weapon Art 2H
+102 - Dragonslayer Greataxe Weapon Art 2H
+103 - Fresh Prince Ricard's Rapier Weapon Art 2H
+104 - Dragonslayer Greataxe Weapon Art 2H
+105 - Fresh Prince Ricard's Rapier Weapon Art 2H
+106 to 107 - Valorheart Stance 2H
+108 - Quickstep 2H
+109 to 199 - Weapon Skill 1H
+200 - Valorheart  Stance 2H
+201 - Greatsword Stance 2H
+202 to 203 - Fresh Prince Ricard's Rapier Weapon Art 2H
+204 to 207 - Valorheart Stance 2H
+208 to 255 - Weapon Skill 1H
+ 
+Shortbow
+8 - Neck Swipe 2H
+9 - Dragonslayer Greataxe Weapon Art 2H
+10 - Quickstep 2H
+11 - Charge 2H
+108 to 112 - Quickshot 2H
+208 to 210 - Greatbow Weapon Art 2H
+ 
+Great Door Shield
+0 to 1 - Weapon Skill 1H
+2 - Great Door Shield Stance 2H
+3 to 71 - Weapon Skill 1H
+72 to 73 - Shield Bash 1H 2H
+74 to 255 - Weapon Skill 1H
+ 
+Friede's Dank Scythe
+0 to 19 - Weapon Skill 1H
+20 - Charge 2H
+21 to 22 - Dragonslayer Greataxe Weapon Art 2H
+23 - Charge 2H
+24 - Steady Chant (Magic Attack Up and scythe glows blue) 2H
+25 - Dragonslayer Greataxe Weapon Art 2H
+26 to 30 - Charge 2H
+31 - Glaive Spinaroo 2H
+32 - Dragonslayer Greataxe Weapon Art 2H
+33 - Charge 2H
+34 - Dragonslayer Greataxe Weapon Art 2H
+35 to 119 - Weapon Skill 1H
+120 to 121 - Glaive Spinaroo 2H
+122 - Charge 2H
+123 to 124 - Dragonslayer Greataxe Weapon Art 2H
+125 - Warcry 2H
+126 - Charge 2H
+127 - Perserverence 2H
+128 - Hurr Durr 2 Scythes make me edgewalk
+129 - Crucifix of The Mad RNG Weapon Art 2H (Only perserverence works)
+130 - 219 Weapon Skill 2H
+220 - Neck Swipe 2H
+221 to 223 - Dragonslayer Greataxe Weapon Art 2H
+224 - Oh well yet again a mini secondary scythe makes me edgewalk
+225 to 255 - Weapon Skill 1H
+ 
+Onikiri & Ubadachi
+0 to 39 - Weapon Skill 1H
+40 - Curved Sword Spin2Win 2H
+41 to 139 - Weapon Skill 1H
+140 to 141 - Curved Sword Spin2Win 2H
+142 to 149 - Weapon Skill 1H
+150 - Curved Sword Spin2Win 2H
+151 to 159 - Weapon Skill 1H
+160 - Curved Sword Spin2Win 2H
+161 to 239 - Weapon Skill 1H
+240 - REEEEEEE IMA MASH L1 TO BLEED YOU GAIJIN PIGU 2H
+241 to 255 - Weapon Skill 1H
+ 
+Brigand Twindaggers
+0 - Unfaultering Prayer 1H 2H
+1 - Dragonslayer Greataxe Weapon Art 2H
+2 - Steady Chant (Spell Attack Up with dagger glow) 1H 2H
+3 to 95 - Weapon Skill 1H
+96 - Shield Bash 1H 2H
+97 - Steady Chant 1H 2H
+98 to 195 - Weapon Skill 1H
+196 - Quickstep 2H
+197 to 255 - Weapon Skill 1H
+ 
+ＴＨＥ ＢＡＳＳ ＣＡＮＮＯＮ
+0 to 43 - Weapon Skill 1H
+44 - Weird Stance 2H
+45 to 47 - Dragonslayer Greataxe Weapon Art 2H
+48 to 50 - Weird Stance 2H
+51 to 52 - Stomp 2H
+53 - Storm Ruler 2H
+54 - Perserverence 2H
+55 - Fresh Prince Ricard's Rapier Weapon Art 2H
+56 - Crow Quills Weapon Art 2H
+57 to 143 - Weapon Skill 1H
+144 - Stomp 2H
+145 - Dragonslayer Greataxe Weapon Art 2H
+146 - Charge 2H
+147 to 151 - Stomp 2H
+152 to 153 -  Weapon Skill 1H
+154 - Curved Sword Spin2Win 2H
+155 to 243 - Weapon Skill 1H
+244 - Weird Stance 2H
+245 - Dragonslayer Greataxe Weapon Art 2H
+246 - Fresh Prince Ricard's Rapier Weapon Art 2H
+247 - Crow Quills Weapon Art 2H
+248 to 255 - Weapon Skill 2H
+ 
+Frayed Blade
+0 to 31 - Weapon Skill 1H
+32 - Frayed Blade Weapon Art 2H
+33 - Dragonslayer Greataxe Weapon Art 2H
+34 - Frayed Blade Weapon Art 2H
+35 - Shield Pierce (possibly Dark Drift)
+36 - Frayed Blade Weapon Art 2H
+37 to 131 - Weapon Skill 1H
+132 - Warcry 2H
+133 - Dragonslayer Greataxe Weapon Art 2H
+134 - Dragonslayer Greataxe Weapon Art 2H
+135 - Quickstep 2H
+136 - Warcry 2H
+137 to 231 - Weapon Skill 1H
+232 - Warcry 2H
+233 to 235 - Dragonslayer Greataxe Weapon Art 2H
+236 - Warcry 2H
+237 - Dragonslayer Greataxe Weapon Art 2H
+238 - Warcry 2H
+239 to 255 - Weapon Skill 1H
+ 
+Repeating Crossbow
+1 to 52 - Weapon Skill 1H
+53 - Ubisoft please nerf Shoulder Bash, the vortex is op 2H
+54 - Quickstep 2H
+55 - Ratatatatat 2H
+56 to 151 - Weapon Skill 1H
+152 - Steady Chant 2H
+153 to 157 - Steady Chant (With Dark flame glow) 2H
+158 to 251 - Weapon Skill 1H
+252 - Unfaultering Prayer 2H
+253 - Steady Chant (With Dark flame glow) 2H
+254 - Shoulder Bash-like Charge 2H
+255 - Unfaultering Prayer 1H 2H
+ 
+Aquamarine Dagger
+0 to 89 - Weapon Skill 1H
+90 to 93 - Parry 1H 2H
+94 to 98 - Weapon Skill 1H
+99 - Parry 1H 2H
+100 - Quickstep 2H
+101 - Blind Spot 2H
+102 - Dragonslayer Greataxe Weapon Art 2H
+103 - Blind Spot 2H
+104 - Dragonslayer Greataxe Weapon Art 2H
+105 - Blind Spot 2H
+106 to 107 - Hurr Durr Lightsaber 2H
+108 - Quickstep 2H
+109 to 199 - Weapon Skill 1H
+200 - Moar Lightsaber 2H
+201 - Stomp (Probably UGS) 2H
+202 to 203 - Blindspot 2H
+204 to 207 - Even Moar Lightsaber 2H
+208 to 255 - Weapon Skill
+ 
+Black Knight Shield
+0 to 90- Weapon Skill 1H
+91 to 93 - Parry 1H 2H
+94 to 98 - Weapon Skill 1H
+99 - Parry 1H 2H
+100 - Quickstep 2H
+101 - Fresh Prince Ricard's Rapier Weapon Art (with a shield, mhmkay) 2H
+102 - Dragonslayer Greataxe Weapon Art (with a shield, mhmkay) 2H
+103 - Fresh Prince Ricard's Rapier Weapon Art (with a shield, mhmkay) 2H
+104 - Dragonslayer Greataxe Weapon Art (with a shield, mhmkay) 2H
+105 - Fresh Prince Ricard's Rapier Weapon Art (with a shield, mhmkay) 2H
+106 to 107 - A Stance that I'm 100% sure does not belong to shield 2H
+108 - Quickstep 2H
+109 to 199 - Weapon Skill 1H
+200 - A Stance that I'm 100% sure does not belong to shield 2H
+201 - Stomp (UGS) 2H
+202 to 203 - Fresh Prince Ricard's Rapier Weapon Art (with a shield, mhmkay) 2H
+204 to 207 - A Stance that I'm 100% sure does not belong to shield 2H
+208 to 255 - Weapon Skill 1H
+ 
+Ringed Knight Paired Greatcancer
+0 to 43 - Weapon Skill 1H
+44 - Weird Stance 2H
+45 to 47 - Dragonslayer Greataxe Weapon Art 2H
+48 to 50 - Weird Stance 2H
+51 to 52 - Stomp (UGS) 2H
+53 - Storm Ruler 2H
+54 - Perserverence 2H
+55 - Fresh Prince Ricard's Rapier Weapon Art 2H
+56 - Crow Quills Weapon Art 2H
+57 to 143 - Weapon Skill 1H
+144 - Stomp 2H
+145 - Dragonslayer Greataxe Weapon Art 2H
+146 - Charge 2H
+147 to 151 - Stomp 2H
+152 to 153 - Weapon Skill 1H
+154 - Ringed Knight Paired Greatsword's Weapon Art 2H
+155 to 243- Weapon Skill 1H
+244 - Weird Stance 2H
+245 - Dragonslayer Greataxe Weapon Art 2H
+246 - Fresh Prince Ricard's Rapier Weapon Art 2H
+247 - Crow Quills Weapon Art 2H
+248 to 255 - Weapon Skill 1H
+ 
+Moonman Sword of purging the filth
+0 to 43 - Weapon Skill 1H
+44 - Stance 2H
+45 to 47 - Pierce the Heavens (floor) with you dank moonman lasers 2H
+48 to 50 - Stance 2H
+51 to 52 - Stomp 2H
+53 - Storm Ruler Weapon Art 2H
+54 - Perserverence
+55 - Fresh Prince Ricard's Rapier Weapon Art 2H
+56 - Crow Quills Weapon Art 2H
+57 to 143 - Weapon Skill 1H
+144 - Stomp 2H
+145 - Pierce the Heavens (floor) with you dank moonman lasers 2H
+146 - Charge 2H
+147 to 151 - Stomp 2H
+152 to 153 - Weapon Skill 1H
+154 - Curved Sword Spin2Win 2H
+155 to 243 - Weapon Skill 1H
+244 - Stomp 2H
+245 - Pierce the Heavens (floor) with you dank moonman lasers 2H
+246 - Fresh Prince Ricard's Rapier Weapon Art 2H
+247 - Crow Quills Weapon Art 2H
+248 to 255 - Weapon Skill 1H
+ 
+Quakestone Hammer
+0 to 76 - Weapon Skill 1H
+77 - Warcry 2H
+78 - Steady Chant 1H 2H
+79 - Quakestone Hammer Weapon Art 2H
+80 - Dragonslayer Greataxe Weapon Art 2H
+81 to 175 - Weapon Skill 1H
+176 to 178 - Quakestone Hammer Weapon Art 2H
+179 - Warcry 2H
+180 - Quakestone Hammer Weapon Art 2H
+181 - Glaive Spinaroo 2H
+182 to 183 - Quakestone Hammer Weapon Art 2H
+184 - Charge 2H
+185 to 255 - Weapon Skill 1H
+ 
+Morne's Hammer
+0 to 75- Weapon Skill 1H
+76 - Morne's Hammer Weapon Art 2H
+77 - Warcry 2H
+78 - Steady Chant (With magic damage up, spell damage up and blue glow) 2H
+79 - Morne's Hammer Weapon Art 2H
+80 - Dragonslayer Greataxe Weapon Art 2H
+81 to 175 Weapon Skill 1H
+176 to 178 - Morne's Hammer Weapon Art 2H
+179 - Warcry 2H
+180 - Morne's Hammer Weapon Art 2H
+181 - Glaive Spinaroo 2H
+182 to 183 - Morne's Hammer Weapon Art 2H
+184 - Charge 2H
+185 to 255 - Weapon Skill 1H
+ 
+ActBase ActSpecial  ActArt  Art Base25Sp0 |BastardGS    Base27Sp113 |Estoc  Special adjusted, 25 base, Longsword
+41  127 0   Unfaltering Prayer  -   -   -
+49  0   0   none    -   -   Works i guess
+43  234 1   Awakening   -   -   -
+41  11  2   Pray for Favor  -   -   -
+47  250 2   lockout -   -   -
+42  146 8   Jumping slash (onislayer)   -   -   -
+42  146 10  Quickstep (claws)   -   -   weapon skill
+42  152 10  Fist    -   -   weapon skill
+36  0   20  Charge (spear)  -   -   -
+36  0   20  Charge (spear)  -   -   -
+36  67  20  Charge  -   -   -
+36  67  20  Charge (spear)  -   -   -
+36  0   20  Charge (spear)  -   -   -
+36  176 21  falling bolt (ranged and buff)  -   -   -
+36  197 22  Pacify (buff)   -   -   -
+36  200 23  shield splitter -   -   -
+36  200 23  shield splitter -   -   -
+36  178 24  Steady Chant    -   -   -
+36  0   25  Unleash Dragon  -   -   -
+36  177 26  Charge (spear)  -   -   -
+36  134 27  Charge (fall down at end)   -   -   didn‘t bother
+33  148 28  Spin slash (combo hammer)   -   -   didn‘t bother
+36  68  28  Charge (buff+projectile)    -   -   didn‘t bother
+36  175 29  Kindled Charge  -   -   didn‘t bother
+36  0   30  Charge (spear)  -   -   didn‘t bother
+36  63  31  Spin sweep (partizan)   -   -   didn‘t bother
+29  0   32  Stance (Katana) -   -   didn‘t bother
+29  90  32  Stance (Katana) -   -   didn‘t bother
+29  0   32  Stance (Katana) -   -   didn‘t bother
+36  246 32  Hurl Spear  -   -   didn‘t bother
+29  198 33  Bloodlust (sudoku)  -   -   didn‘t bother
+36  252 33  Ember   -   -   didn‘t bother
+29  0   34  Stance (Katana) -   -   didn‘t bother
+29  0   35  Darkdrift (shield splitter) -   -   didn‘t bother
+29  2   36  Hold / Stance (spam and spell)  -   -   didn‘t bother
+23  142 40  Gotthard's Spin slash   -   -   didn‘t bother
+23  0   44  Stance (SS) Works   Works   -
+25  0   44  Stance (Greatsword) Works   Works   -
+25  157 44  Stance (Greatsword) Works   Works   -
+25  74  44  Stance (Greatsword) Works   Works   -
+25  196 44  Stance (Greatsword) Works   Works   -
+25  156 45  Wrath of the Gods   Falling Bolt    Shield Splitter -
+25  159 46  ember   Greataxe    Shield Splitter -
+25  158 47  Moonlight Vortex    Greataxe    Shield Splitter -
+25  154 48  Stance (Poke&Projectile)    Works   Stance 
+25  155 49  Stance Sacred holy light and flame  Works   Stance 
+25  131 50  Stance(Wolf Knight's GS)    Works   Stance 
+25  221 51  Stomp(spin r2)  Stomp   Stomp  
+25  0   52  Stomp (Bastard sword)   Stomp   Stomp  
+25  0   53  Stance (Stormruler) Works   Stance 
+46  0   53  Tackle  -   -  
+46  85  53  Tackle  -   -  
+46  0   53  Tackle  -   -  
+46  0   53  Tackle  -   -  
+46  84  53  Tackle  -   -  
+25  80  54  Perseverance (Greatsword)   Works   Works  
+25  245 55  Elfriede's blackflame   Ricard‘s spam Works  
+64  6   55  Repeat Fire -   -  
+25  7   56  Blade of Peril  Crow Quill  Works  
+48  0   60  Weapon Skill    -   -  
+48  0   60  Weapon Skill    -   -  
+43  231 64  Whip weapon art -   -  
+43  231 64  Whip weapon art -   -  
+43  231 64  Whip weapon art -   -  
+43  229 65  Fire whip   -   -  
+47  0   70  Weapon Skill    -   -  
+48  0   72  Shield Bash -   -  
+48  0   72  Shield Bash -   -  
+48  254 73  Dragon Breath   -   -  
+33  9   76  Perseverance (Hammer class) -   -  
+33  0   76  Perseverance (Hammer class) -   -  
+33  0   76  Perseverance (Hammer class) -   -  
+33  59  77  Warcry (hammer) -   -  
+33  210 77  Warcry (hammer) -   -  
+33  220 78  Steady Chant    -   -  
+33  228 79  Stamina     -   -  
+48  150 80  Weapon SKill    -   -  
+48  150 80  Weapon SKill    -   -  
+48  150 80  Weaponn Skill   -   -  
+48  150 80  Weapon Skill    -   -  
+48  150 80  Weapon Skill    -   -  
+48  150 80  Weapon Skill    -   -  
+48  150 80  Weapon Skill    -   -  
+48  150 80  Weapon SKill    -   -  
+36  145 84  Charge (spear)  -   -  
+28  0   88  Spin Slash (Curved Sword)   -   -  
+28  0   88  Spin Slash (Curved Sword)   -   -  
+28  151 88  Spin Slash (overhead)   -   -  
+28  165 89  Magic projectile (crescent moon)    -   -  
+20  71  90  Parry (parry dagger)    -   -  
+28  212 90  Spin slash (storm knockdown)    -   -  
+27  71  90  Stance (Rapier) -   -  
+48  0   90  Parry (small shield)    -   -  
+48  0   90  Parry (small shield)    -   -  
+48  0   90  Parry (small shield)    -   -  
+48  0   90  Parry (small shield)    -   -  
+48  0   90  Parry (small shield)    -   -  
+48  0   90  Parry (small shield)    -   -  
+48  0   90  Parry (small shield)    -   -  
+48  0   90  Parry (small shield)    -   -  
+48  91  90  Parry (parry shield)    -   -  
+48  91  90  Parry (parry shield)    -   -  
+48  91  90  Parry (parry shield)    -   -  
+48  0   90  Parry   -   -  
+28  164 91  Spin Slash (long range) -   -  
+48  159 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+48  150 91  Parry (medium shield)   -   -  
+28  0   92  Spin Slash (Curved Sword)   -   -  
+28  99  92  Spin slash (overhead)   -   -  
+48  214 92  Spell Parry -   -  
+28  151 93  Spin slash  (overhead)  -   -  
+48  150 93      -   -  
+28  101 94  Chain spin  -   -  
+28  247 95  Prying Wedge    -   -  
+28  1   96  Spin Slash (demon edition)  -   -  
+41  149 96  Combustion  -   -  
+41  239 97  Parting Flame (estus reg)   -   -  
+20  72  100 Quickstep   -   -  
+20  72  100 Quickstep   -   -  
+20  153 100 Quickstep   -   -  
+20  72  100 Quickstep   -   -  
+20  72  101 Dead Angle  -   -  
+20  153 101 Dead Angle  -   -  
+20  204 102 unleash dragon  -   -  
+20  206 103 guiding light   -   -  
+20  205 105 Shield Splitter -   -  
+20  0   107 crystal blade   -   -  
+20  72  108 quickstep   -   -  
+44  81  108 Rapid Fire  -   -  
+44  81  108 Rapid Fire  -   -  
+44  0   109 Puncture    -   -  
+44  82  110 Pharis Triple-Shot  -   -  
+44  230 111 Darkmoon Arro   -   -  
+44  249 112 Unseen Arrow    -   -  
+38  0   120 Spin Sweep (Halberd)    -   -  
+38  112 120 Spin Sweep (Halberd)    -   -  
+38  0   120 Spin Sweep (Halberd)    -   -  
+38  201 121 Chain spin (winged halberd) -   -  
+38  21  122 Gundyr's Charge -   -  
+38  217 124 Flame projectile (immotinder)   -   -  
+38  0   125 Warcry (crescent axe)   -   -  
+38  108 126 Charge (halberd)    -   -  
+38  108 127 Perseverance (Halberd)  -   -  
+38  248 128 Wind Wheel  -   -  
+48  150 128 Shield Bash -   -  
+48  93  128 Shield Bash -   -  
+38  5   129 foolishness boom    -   -  
+48  227 129 Shield Strike   -   -  
+30  0   132 Warcry (Axe)    -   -  
+30  0   132 Warcry (Axe)    -   -  
+30  0   132 Warcry (Axe)    -   -  
+30  0   132 Warcry (Axe)    -   -  
+30  103 133 Butcher Sharpen + Regen -   -  
+30  167 134 Eleonora Sharpen + Regen    -   -  
+30  102 135 Quickstep (asshole axe) -   -  
+30  241 136 Warcry (Charge) -   -  
+28  137 140 Spin slash (combo curved)   -   -  
+28  137 141 twinweapon l1   -   -  
+26  203 144 Stomp (UGS) Works   Works  
+26  202 144 Stomp (UGS) Works   Works  
+26  161 145 Parry (Farron)  Falling  Bolt   Shield Splitter
+26  160 146 Charge (Astora) Works   Works  
+26  162 147 Stomp (UGS Buff r2) Works   Works  
+26  189 148 Stomp (Firetrail r2)    Works   Works  
+26  193 149 Stomp (UGS) Works   Works  
+26  95  149 Stomp (UGS SPIN)    Works   Works  
+26  128 150 Stomp ( UGS Overhead r2)    Works   Works  
+26  163 151 Stomp (UGS overhead r2) Works   Works  
+41  0   152 Steady Chant    -   -  
+41  0   152 Steady Chant    -   -  
+41  0   152 Steady Chant    -   -  
+41  0   152 Steady Chant    -   -  
+41  0   152 steady chant    -   -  
+41  0   152 Steady Chant    -   -  
+41  223 153 Steady Chant (sage) -   -  
+26  253 154 Ember   Spinning Slash  Works  
+41  224 154 Poison Spores   -   -  
+41  10  156 Chant from the Depths   -   -  
+41  9   157 Feasting Branch -   -  
+28  139 160 Dancer's grace  -   -  
+42  152 165 Fire tornado    -   -  
+42  123 166 Life drain  -   -  
+42  152 167 Perseverance (Fist) -   -  
+35  0   176 Perseverance (Greathammer)  -   -  
+35  173 176 Perseverance (Greathammer)  -   -  
+35  0   176 Perseverance (Greathammer)  -   -  
+35  70  176 Perseverance (Greathammer)  -   -  
+35  174 177 Flaming perseverance    -   -  
+35  172 178 Flame surge -   -  
+35  69  179 Warcry (greatclub)  -   -  
+35  213 179 Warcry (greatclub)  -   -  
+35  211 180 Morne's Rage    -   -  
+35  0   181 Spin sweep (Greathammer)    -   -  
+35  0   181 Spin sweep (Greathammer)    -   -  
+35  171 182 Perseverance (Greathammer)  -   -  
+35  243 183 Quake   -   -  
+30  138 184 Chain spin (winged doubleaxe)   -   -  
+35  3   184 Call to Stone   -   -  
+28  195 188 Spin slash (longtriple) -   -  
+28  51  190 Slash (overhead Curved GS)  -   -  
+28  195 191 Spin slash (longtriple) -   -  
+28  8   192 Sever (butcher knife spam)  -   -  
+20  141 196 Quickstep   -   -  
+23  0   200 Stance (SS) -   -  
+23  0   200 Stance (SS) -   -  
+23  54  200 Stance (SS) -   -  
+23  0   200 Stance (SS) -   -  
+23  0   200 Stance (SS) -   -  
+23  53  200 Stance (SS) -   -  
+23  53  200 Stance (SS) -   -  
+23  54  200 Stance (SS) -   -  
+30  0   200 Warcry (Axe)    -   -  
+23  57  201 Stomp (Dark Sword   -   -  
+23  207 202 guiding light   -   -  
+23  209 203 oath of sunlight    -   -  
+23  188 204 lothric's sacred holy light -   -  
+23  208 205 Stance (SS) -   -  
+23  236 206 lion stance     -   -  
+23  251 207 ember   -   -  
+45  83  208 Puncturing Arrow    -   -  
+45  184 209 Puncturing ARrow    -   -  
+45  244 210 Pierce Earth    -   -  
+38  50  220 Neckswipe   -   -  
+38  50  220 Neckswipe   -   -  
+38  179 222 Cold (pontiff scythe)   -   -  
+38  232 224 combo and ice (scythe stance)   -   -  
+47  0   228 Shield Bash -   -  
+47  0   228 Shield Bash -   -  
+47  0   228 Shield Bash -   -  
+47  0   228 Shield Bash -   -  
+47  0   228 Shield Bash -   -  
+47  0   228 Shield Bash -   -  
+47  225 228 Shield Bash -   -  
+47  222 229 Moan    -   -  
+32  0   232 Warcry (Greataxe)   -   -  
+32  107 232 Warcry (Greataxe)   -   -  
+32  168 234 Demon fire  -   -  
+32  199 235 Falling bolt    -   -  
+32  169 236 Warcry (Yhorm's)    -   -  
+32  0   237 Sharpen (Great Machete) -   -  
+32  424 238 Earthen Wrath   -   -  
+47  94  238 Stone Flesh -   -  
+29  144 240 Onislayer   -   -  
+27  0   244 Stance (Rapier) Works (GS)  Works  
+27  113 245 Shield Splitter (Rapier)    Falling bolt    Works  
+27  187 245 Shield Splitter (Rapier)    -      
+27  115 246 Ricard's lunge and press    Works   Works  
+27  237 247 Quill Dart  Works   Works  
+47  126 248 Wheel of Fate   -   Works  
+47  255 249 Dragon Roar -   -  
+41  127 252 Unfaltering Prayer  -   -  
+41  127 252 Unfaltering Prayer  -   -  
+41  185 253 Gentle Prayer   -   -  
+41  185 253 Gentle Prayer   -   -  
+41  185 253 Gentle Prayer   -   -  
+41  185 253 Gentle Prayer   -   -  
+41  185 253 Gentle Prayer   -   -  
+41  127 255 Unfaltering Prayer  -   -  
+                ###########    
+    Art Changes Weapon art             
+        Stances depend on the weapon itself            
+        Some Weapon arts work almost always            
+        Special changes weapon art             
+    Special Changes r2             
+        Changes r1             
+        Changes weapon art (?)             
+    Base    Changes r1             
+        Changes r2 like a special at high numbers
+ 
+####################################################################
+ 
+Behaviour   Base    Special Art Name    Art
+2000    20  71  90  Parrying Dagger Parry (parry dagger)   
+2001    20  72  100 Bandit Knife    Quickstep  
+2001    20  72  100 Rotten Gru Dagger   Quickstep  
+2001    20  72  101 Corvian Greatknife  Dead Angle  Heavy Slashes R2
+2010    20  153 101 HandMaid's Dagger   Dead Angle 
+2020    20  205 105 Mail Breaker    Shield Splitter Poke r2's
+2030    20  204 102 tailbone short sword    unleash dragon 
+2040    20  153 100 Dagger  Quickstep  
+2041    20  72  100 Harpe   Quickstep  
+2041    20  72  108 Murky Handscythe    quickstep  
+2042    20  206 103 Scholar's candlestick   guiding light  
+2050    20  0   107 Aquamarine dagger   crystal blade  
+2090    20  141 196 Brigand Twindaggers Quickstep   Twin weapon 2h
+2300    23  0   200 Longsword   Stance (SS)
+2300    23  0   200 Astora Straightsword    Stance (SS)
+2300    23  54  200 Lothric Knight SS   Stance (SS) Doublestab r2
+2300    23  0   200 Barbed Straightsword    Stance (SS)
+2300    23  208 205 Irithyll Straightsword  Stance (SS)
+2300    23  0   44  Anri's Straightsword    Stance (SS)
+2300    23  0   200 Morion Blade    Stance (SS)
+2301    23  53  200 Broken Straightsword    Stance (SS) Forward r2
+2301    23  53  200 Broadsword  Stance (SS) Forward r2
+2302    23  54  200 Shortsword  Stance (SS) Doublestab r2
+2304    23  57  201 Darksword   Stomp (Dark Sword   Upwards spin slash r
+2310    23  188 204 Lothric's holy ss   lothric's sacred holy light
+2320    23  209 203 Sunlight Straightsword  oath of sunlight   
+2330    23  251 207 ringed knight's ss  ember  
+2340    23  207 202 Cleric's candlestick    guiding light  
+2390    23  142 40  Gotthard's Twinswords   Gotthard's Spin slash   Twin weapon 2h
+2391    23  236 206 Valorheart  lion stance     Twin Weapon 2h
+2500    25  0   52  Bastard Sword   Stomp (Bastard sword)  
+2501    25  80  54  Black Knight Sword  Perseverance (Greatsword)   Unique r2's
+2502    25  0   44  Flamberge   Stance (Greatsword)
+2503    25  157 44  Hollowslayer    Stance (Greatsword) Poke r2's, spiny r1's
+2505    25  74  44  Claymore    Stance (Greatsword) Poke r2's
+2508    25  131 50  Wolf Knight's GS    Stance(Wolf Knight's GS)    Long poke 1hr2, golf 2hr2
+2510    25  154 48  Greatsword of Judgement Stance (Poke&Projectile)   
+2511    25  155 49  Twin Princes greatsword Stance Sacred holy light and flame 
+2512    25  156 45  Wolnir's Holy Sword Wrath of the Gods  
+2513    25  158 47  mlgs    Moonlight Vortex    r2 shoots projectile
+2514    25  159 46  Firelink Greatsword ember  
+2515    25  0   53  Stormruler  Stance (Stormruler)
+2516    25  221 51  Executioner's GS    Stomp(spin r2) 
+2517    25  196 44  Drakeblood Greatsword   Stance (Greatsword) Spinny r1's, poke 1hr2
+2518    25  245 55  Onyx Blade  eljFriede's blackflame 
+2519    25  7   56  Gael's Greatsword   Blade of Peril  poke 1hr2, 2hr2
+2601    26  193 149 Greatsword      Stomp (UGS) Horizontal 2hr2, rolling sweeps
+2602    26  128 150 Black Knight Greatsword Stomp ( UGS Overhead r2)    Unique r2's, overhead r1's
+2603    26  160 146 Astora Greatsword   Charge (Astora) Poke r2's, downsmash rolls
+2604    26  189 148 Lorian's Greatsword Stomp (Firetrail r2)   
+2605    26  203 144 Zweihander  Stomp (UGS) Poke r1, overhead r2
+2610    26  163 151 Fume Knight Greatsword  Stomp (UGS overhead r2)
+2611    26  162 147 Profaned Greatsword Stomp (UGS Buff r2) Flaming r2's
+2613    26  202 144 Lothric Knight GS   Stomp (UGS)
+2614    26  95  149 Cathedral Knight GS     Stomp (UGS SPIN)    Rolling sweeps
+2620    26  161 145 Farron Greatsword   Parry (Farron)  Twinweapon l1
+2615    26  253 154 Ringed Knight 2UGS  Ember  
+2800    28  0   88  Falchion    Spin Slash (Curved Sword)  
+2800    28  0   88  Carthus Curved Sword    Spin Slash (Curved Sword)  
+2806    28  139 160 Dancer's curved swords  Dancer's grace  twinweapon l1
+2807    28  0   92  Carthus Shotel  Spin Slash (Curved Sword)  
+2810    28  165 89  Crescent moon CS    Magic projectile (crescent moon)   
+2811    28  212 90  Storm curved sword  Spin slash (storm knockdown)   
+2812    28  247 95  Follower Sabre  Prying Wedge   
+5300    28  151 93  Scimitar    Spin slash  (overhead) 
+5300    28  151 88  Rotten Ghru Spin Slash (overhead)  
+5301    28  101 94  Painting Guardian sword Chain spin 
+5302    28  99  92  Shotel  Spin slash (overhead)  
+5303    28  164 91  Pontiff Knight CS   Spin Slash (long range)
+5304    28  137 140 Sellsword Twinblades    Spin slash (combo curved)   Twinweapon l1,
+5304    28  137 141 Grave Warden twin swordsSpin slash (combo curved)   twinweapon l1  
+5305    28  1   96  Demon's Scar    Spin Slash (demon edition)  r2 casts
+5100    28  51  190 Carthus curved GS   Slash (overhead Curved GS) 
+5110    28  195 188 Murakumo    Spin slash (longtriple)
+5110    28  195 191 Exile greatsword    Spin slash (longtriple)
+5112    28  8   192 Harald Curved GS    Sever (butcher knife spam) 
+2700    27  71  90  Rapier  Stance (Rapier) Offhand parry
+2700    27  0   244 Crystal sage rapier Stance (Rapier)
+2702    27  113 245 Estoc   Shield Splitter (Rapier)    Unique r2's
+2704    27  115 246 Ricard's rapier Ricard's lunge and press   
+2710    27  187 245 Irithyll rapier Shield Splitter (Rapier)   
+2711    27  237 247 Crow Quills Quill Dart  Twin weapon l1
+2813    29  2   36  Frayed Blade    Hold / Stance (spam and spell) 
+2900    29  0   32  Uchigatana  Stance (Katana)
+2904    29  0   34  Washing pole    Stance (Katana) Slower
+2902    29  90  32  Black Blade Stance (Katana) Unique r2's
+2903    29  198 33  Bloodlust   Bloodlust (sudoku) 
+2900    29  0   32  Chaos Blade Stance (Katana)
+2905    29  0   35  Darkdrift   Darkdrift (shield splitter)
+2990    29  144 240 Onikiri & Ubadachi  Onislayer   twinweapon l1
+3000    30  0   132 Battle Axe  Warcry (Axe)   
+3000    30  0   132 Briigand Axe    Warcry (Axe)   
+3000    30  0   132 Dragonslayer Axe    Warcry (Axe)   
+3001    30  138 184 Winged Knight's 2axes   Chain spin (winged doubleaxe)   twinweapon l1
+3010    30  0   200 Hand Axe    Warcry (Axe)    Light r1
+3002    30  241 136 Millwood Axe    Warcry (Charge)
+3011    30  102 135 Thrall axe  Quickstep (asshole axe) Light r1
+3030    30  103 133 Butcher Knife   Butcher Sharpen + Regen special r2's
+3050    30  167 134 Eleonora    Eleonora Sharpen + Regen   
+3060    30  0   132 Serpent Hatchet Warcry (Axe)   
+3200    32  0   232 Greataxe    Warcry (Greataxe)  
+3203    32  107 232 Black Knight Greataxe   Warcry (Greataxe)   Unique r2's
+3205    32  424 238 Earth Seeker    Earthen Wrath  
+3210    32  169 236 Yhorm's great Machete   Warcry (Yhorm's)   
+3211    32  168 234 Demon's Gretaxe Demon fire 
+3212    32  199 235 Dragonslayer Greataxe   Falling bolt   
+3213    32  0   237 Great Machete   Sharpen (Great Machete)
+3300    33  9   76  Mace    Perseverance (Hammer class)
+3300    33  0   76  Morning star    Perseverance (Hammer class)
+3301    33  228 79  Warpick Stamina     regen buff
+3301    33  220 78  Heysel Pick Steady Chant    Cast r2
+3302    33  59  77  Club    Warcry (hammer) Jumping overhead r2
+3302    33  0   76  Blacksmith's Hammer Perseverance (Hammer class)
+3310    33  210 77  Reinforced club Warcry (hammer) Sweeping greatclub r2's
+3390    33  148 28  Drang Twin Hammers  Spin slash (combo hammer)   twinweapon l1
+3500    35  0   176 Great Mace  Perseverance (Greathammer) 
+3500    35  173 176 Vordt's Greathammer Perseverance (Greathammer) 
+3500    35  0   176 Dragontooth Perseverance (Greathammer) 
+3503    35  70  176 Smough's Greathammer    Perseverance (Greathammer)  Jumping ugly r2
+3504    35  172 178 Gargoyle Flame Hammer   Flame surge
+3505    35  174 177 Old King's Greathammer  Flaming perseverance   
+3506    35  69  179 Large Club  Warcry (greatclub)  Overhead jumping r2
+3507    35  213 179 Great Club  Warcry (greatclub)  Sweeping lunge r2
+3508    35  0   181 Wooden Hammer   Spin sweep (Greathammer)   
+3509    35  0   181 Spiked Mace Spin sweep (Greathammer)   
+3510    35  211 180 morne's Greathammer Morne's Rage   
+3511    35  243 183 Quakestone Hammer   Quake  
+3512    35  3   184 Ledo's Great Hammer Call to Stone   Special r2
+3520    35  171 182 pickaxe Perseverance (Greathammer)  Overhead r1's
+3600    36  0   20  Winged Spear    Charge (spear) 
+3600    36  178 24  Golden Ritual Spear Steady Chant    cast r2
+3600    36  0   20  Rotten ghru spear   Charge (spear) 
+3600    36  0   30  Holy bident Charge (spear) 
+3603    36  68  28  Dragonslayer spear  Charge (buff+projectile)    Upward's r2
+3604    36  63  31  Partizan    Spin sweep (partizan)   Horizontal r2's
+3607    36  134 27  Four-pronged-plow   Charge (fall down at end)  
+3608    36  67  20  Pike    Charge  running backste pr1
+3608    36  67  20  Lothric Knight long Spe Charge (spear)  running backstep r1's
+3610    36  177 26  Glorious Greatlance Charge (spear)  running backstep r1's and r2's
+3611    36  176 21  Dragonslayer swordspear falling bolt (ranged and buff) 
+3612    36  4   34  Lothric Knight War Bann Lothric War Banner     
+3620    36  200 23  Arstor's spear  shield splitter halberd 2hr1, halberd 1hr2
+3620    36  200 23  Spear   shield splitter
+3630    36  0   25  Tailbone spear  Unleash Dragon 
+3635    36  246 32  Follower Javelin    Hurl Spear 
+3640    36  197 22  Yorshka's Spear Pacify (buff)  
+3650    36  175 29  Gargoyle Flame Spear    Kindled Charge 
+3660    36  0   20  Jailers solderwwng iron Charge (spear) 
+3670    36  252 33  Ringed Knight's Spear   Ember  
+3690    36  145 84  Drang Twinspears    Charge (spear)  twin weapon 2h
+3802    38  0   120 Lucerne Spin Sweep (Halberd)   
+3805    38  112 120 Black Knight Glaive Spin Sweep (Halberd)    Unique R2's
+3806    38  201 121 Winged Knight's Halberd Chain spin (winged halberd)
+3807    38  21  122 Gundyr's Halberd    Gundyr's Charge
+3809    38  108 126 Halberd Charge (halberd)    Poke r1
+3809    38  108 127 Red-hilted Halberd  Perseverance (Halberd)  Poke r1
+3810    38  217 124 Immolation Tinder   Flame projectile (immotinder)   sorcery r2
+3811    38  0   125 Crescent Axe    Warcry (crescent axe)   Warcry (crescent axe)
+3812    38  0   120 Glaive  Spin Sweep (Halberd)   
+3813    38  248 128 Splitleaf Greatsword    Wind Wheel 
+3814    38  5   129 Crucifix ma king    foolishness boom    mix with large club
+5000    38  50  220 Scythe  Neckswipe  
+5000    38  50  220 Corvian Scythe  Neckswipe  
+5010    38  179 222 Pontiff Knight Scythe   Cold (pontiff scythe)  
+5030    38  232 224 Friede  combo and ice   twin weapon 2h
+4300    43  231 64  Whip    Whip weapon art
+4300    43  231 64  Notched Whip    Whip weapon art
+4300    43  231 64  Spotted Whip    Whip weapon art
+4300    43  229 65  Witch's Locks   Fire whip  
+4302    43  234 1   Rose of Ariandel    Awakening  
+4101    41  0   152 Sorcerer's Staff    Steady Chant   
+4101    41  0   152 Heretic's Staff Steady Chant   
+4101    41  0   152 Witchtree Branch    Steady Chant   
+4101    41  224 154 Storyteller's STaff Poison Spores  
+4101    41  0   152 Mendicant's Staff   Steady Chant   
+4101    41  10  156 Murky Longstaff Chant from the Depths  
+4101    41  0   152 Izalith STaff   steady chant   
+4101    41  0   152 Man-grub's staff    Steady Chant   
+4108    41  9   157 Preacher's Right Arm    Feasting Branch
+4101    41  223 153 Sage's Crystal Staff    Steady Chant (sage)
+4102    41  127 252 Talisman    Unfaltering Prayer 
+4102    41  127 252 Canvas Talisman Unfaltering Prayer 
+4102    41  127 255 Saint's talisman    Unfaltering Prayer 
+4102    41  127 0   Sunlight Talisman   Unfaltering Prayer 
+4102    41  185 253 Cleric's Sacred Chime   Gentle Prayer  
+4102    41  185 253 Priest's Chime  Gentle Prayer  
+4102    41  185 253 Saint-tree Bellvine Gentle Prayer  
+4102    41  185 253 Yorshka's Chime Gentle Prayer  
+4102    41  185 253 Caitha's Chime  Gentle Prayer  
+4107    41  11  2   Sacred Chime of Filianore   Pray for Favor 
+4105    41  149 96  Pyromancy Flame Combustion 
+4106    41  239 97  Pyromancer's Parting Flame  Parting Flame (estus reg)  
+4200    42  152 167 Caestus Perseverance (Fist)
+4205    42  152 165 Demon Fist  Fire tornado   
+4203    42  123 166 Dark Hand   Life drain  can‘t be two-handed
+4202    42  146 8   Claw    Jumping slash (onislayer)   Claw moveset
+4202    42  146 10  Manikin claw    Quickstep (claws)   claw moveset
+4201    42  152 10  Fist    Fist    none
+4400    44  81  108 Short Bow   Rapid Fire 
+4400    44  81  108 Composite Bow   Rapid Fire 
+4400    44  0   109 Longbow Puncture   
+4400    44  82  110 Black Bow of Pharis Pharis Triple-Shot 
+4400    44  249 112 White Birch Bow Unseen Arrow   
+4400    44  230 111 Darkmoon Longbow    Darkmoon Arro  
+4400    45  83  208 Dragonslayer Greatbow   Puncturing Arrow   
+4400    45  184 209 Onislayer Greatbow  Puncturing ARrow   
+4400    45  244 210 Millwood Greatbow   Pierce Earth   
+4600    46  0   53  Light Crossbow  Tackle 
+4600    46  85  53  Sniper Crossbow Tackle 
+4600    46  0   53  Arbalest    Tackle 
+4600    46  0   53  Knight's Crossbow   Tackle 
+4600    46  84  53  Avelyn  Tackle 
+4600    64  6   55  Repeating Crossbow  Repeat Fire
+4700    47  0   228 Black Iron Greatshield  Shield Bash
+4700    47  0   228 Lothric Knight Greatshield  Shield Bash
+4700    47  0   228 Cathedral Knight Greatshield    Shield Bash
+4700    47  0   228 Stone Greatshield   Shield Bash
+4700    47  0   228 Greatshield of Glory    Shield Bash
+4700    47  0   70  Curse Ward Greatshield  Weapon Skill   
+4700    47  0   228 Yhorm's Greatshield Shield Bash
+4702    47  126 248 Bonewheel Shield    Wheel of Fate  
+4703    47  94  238 Havel's Greatshield Stone Flesh
+4704    47  225 228 Dragonslayer GreatshieldShield Bash    
+4705    47  222 229 Moaning Shield  Moan   
+4706    47  250 2   Giant door shield   lockout
+4707    47  255 249 Dragonhead Greatshield  Dragon Roar
+4800    48  159 91  Large Leather Shield    Parry (medium shield)  
+4800    48  150 91  Carthus Shield  Parry (medium shield)  
+4800    48  150 91  East-West Shield    Parry (medium shield)  
+4800    48  150 91  Blue Wooden Shield  Parry (medium shield)  
+4800    48  150 91  Round Shield    Parry (medium shield)  
+4800    48  150 80  Wargod Wooden Shield    Weapon SKill   
+4800    48  150 80  Follower Shield Weapon SKill   
+4800    48  150 91  Kite Shield Parry (medium shield)  
+4800    48  150 91  Knight Shield   Parry (medium shield)  
+4800    48  150 91  Lothric Knight Shield   Parry (medium shield)  
+4800    48  150 80  Spider Shield   Weaponn Skill  
+4800    48  150 80  Stone Parma Weapon Skill   
+4800    48  227 129 Spiked Shield   Shield Strike  
+4800    48  150 128 Porcine shield  Shield Bash
+4800    48  150 80  Shield of Want  Weapon Skill   
+4800    48  150 91  Grass Crest Shield  Parry (medium shield)  
+4800    48  150 91  Dragon Crest Shield Parry (medium shield)  
+4800    48  150 80  Ethereal Oak Shield Weapon Skill   
+4800    48  150 91  Silver Knight Shield    Parry (medium shield)  
+4800    48  150 80  Black Knight Shield Weapon Skill   
+4800    48  150 80  Pontiff Knight Shield   Weapon SKill   
+4800    48  0   60  Eastern Iron Shield Weapon Skill   
+4800    48  0   90  Llewellyn Shield    Parry (small shield)   
+4800    48  0   90  Hawkwood's Shield   Parry (small shield)   
+4800    48  0   90  Iron Round Shield   Parry (small shield)   
+4800    48  0   72  Ghru Rotshield  Shield Bash
+4800    48  0   72  Plank Shield    Shield Bash
+4800    48  0   60  Warrior's Round Shield  Weapon Skill   
+4800    48  0   90  Elkhorn Round Shield    Parry (small shield)   
+4800    48  0   90  Caduceus Round Shield   Parry (small shield)   
+4800    48  0   90  Red and White Shield    Parry (small shield)   
+4800    48  0   90  Crimson PArma   Parry (small shield)   
+4800    48  0   90  Leather Shield  Parry (small shield)   
+4800    48  91  90  Small Leather Shield    Parry (parry shield)   
+4800    48  91  90  Buckler Parry (parry shield)   
+4800    48  91  90  Target Shield   Parry (parry shield)   
+4803    48  93  128 Pierce Shield   Shield Bash
+4804    48  150 93  Golden Wing Crest ShieldSpell Parry    
+4804    48  214 92  Sacred Bloom Shield Spell Parry
+4805    48  0   90  Golden Falcon Shield    Parry  
+4806    48  254 73  Dragonhead shield   Dragon Breath  
+4900    49  0   0   Torch   nonoe
